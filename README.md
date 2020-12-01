@@ -48,7 +48,7 @@ As an owner type, I want:
 ### Features Left to Implement
 
 - Future implementetion that would increase monetization would be to add adds to the webpage. That is not
-the current focus with this project and therefor not Implemented.
+the current focus with this project and therefore not Implemented.
 
 
 ## Technologies Used
