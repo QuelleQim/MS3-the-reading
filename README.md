@@ -36,3 +36,80 @@ As an owner type, I want:
     on the webpage or by adding affiliated links.
 
 
+### Wireframes (UI)
+
+
+## Features
+
+
+### Existing Features
+
+
+### Features Left to Implement
+
+- Future implementetion that would increase monetization would be to add adds to the webpage. That is not
+the current focus with this project and therefor not Implemented.
+
+
+## Technologies Used
+
+
+### Languages
+
+
+### Framework
+
+
+### Library
+
+
+### Other Technologies
+
+
+## Testing
+
+
+### Manual Testing
+
+
+### Webpage images
+
+
+### W3C vaildator
+
+
+### w3 validator
+
+
+### jshint
+
+
+### Automated Testing
+
+
+### Bugs fixed
+
+
+### Known issues
+
+
+## Deployment
+
+
+## Credits
+
+
+### Content
+
+
+### Media
+
+
+#### Images
+
+
+#### Audio
+
+
+### Acknowledgements
+
