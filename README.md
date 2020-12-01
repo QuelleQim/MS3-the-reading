@@ -12,7 +12,7 @@ to monetize the webpage and make a profit through the webpages popularity and us
 
 ### User Stories (UX)
 
-As a usertype, I want:
+As a user type, I want:
 
 -   to be able to create, read, update and delete book reviews.
 
@@ -21,3 +21,18 @@ As a usertype, I want:
 -   to see clear separations between my own book reviews and others.
 
 -	to be able to purchase the book either directly via the webpage or through affiliated links.
+
+
+### Owner Stories (UX)
+
+As an owner type, I want:
+
+-   to create a webpage that will allow users and owners to create, read, update and delete book reviews.
+
+-   the webpage to be intuitive and appealing, which in turn will make the user want to use it
+    on several accounts.
+
+-   to be able to monetize the webpage by providing users with either selling the book directly
+    on the webpage or by adding affiliated links.
+
+
