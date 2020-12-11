@@ -37,7 +37,25 @@ As an owner type, I want:
 
 
 ### Wireframes (UI)
+![Image of Home Page and Footer](assets/wireframes/home-page-and-footer.png)
 
+![Image of Sort Function](assets/wireframes/sort-function.png)
+
+![Image of Sort and Filter chosen](assets/wireframes/sort-and-filter-chosen.png)
+
+![Image of Log In and Register](assets/wireframes/log-in-and-register.png)
+
+![Image of Profile](assets/wireframes/profile.png)
+
+![Image of Manage Categories and New Review](assets/wireframes/manage-catagories-and-new-review.png)
+
+![Image of Add Category and Edit Review](assets/wireframes/ass-category-and-edit-review.png)
+
+![Image of Full Sized Review](assets/wireframes/full-size-review.png)
+
+![Image of Drop down menu for mobile, User](assets/wireframes/drop-down-user.png)
+
+![Image of Drop down menu for mobile, Admin](assets/wireframes/drop-down-menu-admin.png)
 
 ## Features
 
