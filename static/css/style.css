@@ -1,5 +1,7 @@
 body {
+    background-image: url("assets/images/books.jpg");
     background-color: grey;
+    background-size: cover;
 }
 
 .navbar {
