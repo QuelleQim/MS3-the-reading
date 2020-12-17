@@ -18,3 +18,7 @@ nav ul a {
     font-size: 25px;
     color: #c0c4cb;
 }
+
+.flashes h4 {
+    line-height: 2;
+}
