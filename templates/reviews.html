@@ -30,7 +30,10 @@
                         <br>
                         {{ review.review_description}}
                         <br>
-                        {{ review.explicit_content}}
+                        {% if review.explicit_content == "on" %}
+                        <i class="fas fa-exclamation-triangle tooltipped"
+                            data-position="bottom" data-tooltip="Explicit content!"></i>
+                        {% endif %}
                         <br>
                     </p>
                 </div>
