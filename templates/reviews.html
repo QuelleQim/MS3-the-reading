@@ -3,31 +3,40 @@
 
     <h2>I'm extending the base template!</h2>
 
-    {% for review in reviews %}
+    <!-- {% for review in reviews %}
         {{ review.book_name}}<br>
         {{ review.author_name}}<br>
         {{ review.category_name}}<br>
         {{ review.review_description}}<br>
         {{ review.explicit_content}}<br>
         {{ review.published_date}}<br>
-    {% endfor %}
+    {% endfor %} -->
 
     <div class="row">
+        {% for review in reviews %}
         <div class="col s12 m11">
             <div class="card">
                 <div class="card-content grey lighten-2 review-card">
                     <div class="col s3">
                         <img src="mshelley-lchouette.jpg" alt="Mary Shelley, Frankenstein">
                     </div>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively. I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively. I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively. I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively. I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+                    <strong>{{ review.book_name}}</strong>
+                    <p>
+                        {{ review.author_name}}
+                        <br>
+                        {{ review.category_name}}
+                        <br>
+                        {{ review.published_date}}
+                        <br>
+                        {{ review.review_description}}
+                        <br>
+                        {{ review.explicit_content}}
+                        <br>
+                    </p>
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
 
 
