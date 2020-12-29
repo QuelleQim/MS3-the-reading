@@ -4,7 +4,7 @@
     <h3 class="grey-text text-lighten-2 center-align">New Review</h3>
 
 
-    <!-- <div class="row">
+    <div class="row">
         <form class="col s12" method="POST" action="">
             <div class="row">
                 <div class="input-field col s12">
@@ -19,44 +19,56 @@
                 </div>
             </div>
         </form>
-    </div> -->
+    </div>
 
 
 <div class="row">
     <form class="col s12 center-align" method="POST" action="">
         <div class="card grey lighten-2">
-            <div class="card-content black-text">
+            <div class="card-content black-text ">
                 <span class="card-title">
-                    <div class="input-field">
-                        <i class="fas fa-book prefix black-text"></i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">Book Title</label>
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="fas fa-book prefix black-text"></i>
+                            <input id="book_title" name="book_title" type="text" class="validate">
+                            <label for="book_title">Book Title</label>
+                        </div>
                     </div>
-                    <div class="input-field">
-                        <i class="fas fa-user-edit prefix black-text"></i>
-                        <input id="icon_author" type="text" class="validate">
-                        <label for="icon_author">Author</label>
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="fas fa-user-edit prefix black-text"></i>
+                            <input id="author_name" name="author_name" type="text" class="validate">
+                            <label for="author_name">Author</label>
+                        </div>
                     </div>
-                    <div class="input-field">
-                        <i class="far fa-folder-open prefix black-text"></i>
-                        <input id="icon_folder" type="text" class="validate">
-                        <label for="icon_folder">Choose Category</label>
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="far fa-folder-open prefix black-text"></i>
+                            <input id="choose_category" name="choose_category" type="text" class="validate">
+                            <label for="choose_category">Choose Category</label>
+                        </div>
                     </div>
-                    <div class="input-field">
-                        <i class="far fa-comment-dots prefix black-text"></i>
-                        <input id="icon_language" type="text" class="validate">
-                        <label for="icon_language">Language</label>
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="far fa-comment-dots prefix black-text"></i>
+                            <input id="icon_language" name="icon_language" type="text" class="validate">
+                            <label for="icon_language">Language</label>
+                        </div>
                     </div>
-                    <div class="input-field">
-                        <i class="far fa-file-alt prefix black-text"></i>
-                        <input id="icon_length" type="text" class="validate">
-                        <label for="icon_length">Length in pages</label>
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="far fa-file-alt prefix black-text"></i>
+                            <input id="page_length" name="page_length" type="text" class="validate">
+                            <label for="page_length">Length in pages</label>
+                        </div>
                     </div>
-                    <div class="input-field">
-                        <i class="fas fa-pen-fancy prefix black-text"></i>
-                        <input id="icon_pen" type="text" class="validate">
-                        <label for="icon_pen">Write a review here . . .</label>
-                    </div>                                                                
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="fas fa-pen-fancy prefix black-text"></i>
+                            <input id="type_review" name="type_review" type="text" class="validate">
+                            <label for="type_review">Write a review here . . .</label>
+                        </div>    
+                    </div>                                                            
                 </span>
                 <div>
                     <button>Add Review</button>
