@@ -31,7 +31,7 @@
                         <div class="input-field">
                             <i class="fas fa-book prefix"></i>
                             <input id="book_title" name="book_title" minlength="1" maxlength="50"
-                                type="text" class="validate">
+                                type="text" class="validate" required>
                             <label for="book_title">Book Title</label>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         <div class="input-field">
                             <i class="fas fa-user-edit prefix"></i>
                             <input id="author_name" name="author_name" minlength="2" maxlength="40"
-                                type="text" class="validate">
+                                type="text" class="validate" required>
                             <label for="author_name">Author</label>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                         <div class="input-field">
                             <i class="far fa-folder-open prefix"></i>
                             <input id="category_name" name="category_name" minlength="3" maxlength="50"
-                                type="text" class="validate">
+                                type="text" class="validate" required>
                             <label for="category_name">Choose Category</label>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                         <div class="input-field">
                             <i class="far fa-comment-dots prefix"></i>
                             <input id="language" name="language" minlength="5" maxlength="40"
-                                type="text" class="validate">
+                                type="text" class="validate" required>
                             <label for="language">Language</label>
                         </div>
                     </div>
@@ -63,28 +63,39 @@
                         <div class="input-field">
                             <i class="far fa-file-alt prefix"></i>
                             <input id="page_length" name="page_length" minlength="1" maxlength="6"
-                                type="text" class="validate">
+                                type="text" class="validate" required>
                             <label for="page_length">Length in pages</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field">
+                            <i class="far fa-calendar-alt prefix"></i>
+                            <input id="published_date" name="published_date" minlength="4" maxlength="10"
+                                type="text" class="validate" required>
+                            <label for="published_date">Published date</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
                             <i class="fas fa-pen-fancy prefix"></i>
-                            <input id="review_description" name="review_description" minlength="20"
-                                maxlength="3500" type="text" class="validate">
-                            <!-- Add multi line for review -->
+                            <textarea id="review_description" name="review_description"
+                                minlength="50" maxlength="3500" class="materialize-textarea"
+                                required></textarea>
                             <label for="review_description">Write a review here . . .</label>
                         </div>    
                     </div>
                     <div class="row">
-                        <div class="input-field">
-                            <i class="fas fa-exclamation-triangle prefix"></i>
-                            <input id="explicit_content" name="explicit_content"
-                                type="text" class="validate">
-                            <!-- Add slide button -->
-                            <label for="explicit_content">On/Off</label>
-                        </div>    
-                    </div>                                                               
+                        <div class="input-field col">
+                            <div class="switch">
+                                <i class="fas fa-exclamation-triangle prefix"></i>
+                                <label for="explicit_content">
+                                    Explicit Content
+                                    <input type="checkbox" id="explicit_content" name="explicit_content">
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>                                                             
                 </span>
                 <div>
                     <button>Add Review</button>
