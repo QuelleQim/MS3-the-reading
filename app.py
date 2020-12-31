@@ -98,8 +98,24 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_review")
+@app.route("/add_review", methods=["GET", "POST"])
 def add_review():
+    if request.method == "POST":
+        explicit_content = "on" if request.form.get("explicit_content") else "off"
+        review = {
+            "book_title": request.form.get("book_title"),
+            "author_name": request.form.get("author_name"),
+            "category_name": request.form.get("category_name"),
+            "language": request.form.get("language"),
+            "page_length": request.form.get("page_length"),
+            "published_date": request.form.get("published_date"),
+            "review_description": request.form.get("review_description"),
+            "explicit_content": explicit_content
+            "created_by": session["user"]
+        }
+        mongo.db.reviews.insert_one(review)
+        flash("Review Successfully Added!")
+        return redirect(url_for("get_reviews"))
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_review.html", categories=categories)
 

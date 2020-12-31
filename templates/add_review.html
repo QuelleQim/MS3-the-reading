@@ -5,7 +5,7 @@
 
 
     <div class="row card-panel">
-        <form class="col s12 center-align" method="POST" action="">
+        <form class="col s12 center-align" method="POST" action="{{ url_for('add_review') }}">
             <!-- book title input field -->
             <div class="row">
                 <div class="input-field">
@@ -92,7 +92,7 @@
                 <div class="col s12 center-align">
                     <button type="submit" class="btn green accent-4 white-text">
                         Add Review
-                        i
+                        
                     </button>
                     <button>Undo</button>
                 </div>
