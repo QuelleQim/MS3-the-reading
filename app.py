@@ -110,12 +110,14 @@ def add_review():
             "page_length": request.form.get("page_length"),
             "published_date": request.form.get("published_date"),
             "review_description": request.form.get("review_description"),
-            "explicit_content": explicit_content
+            "explicit_content": explicit_content,
+            # Funkar ej
             "created_by": session["user"]
         }
         mongo.db.reviews.insert_one(review)
         flash("Review Successfully Added!")
         return redirect(url_for("get_reviews"))
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_review.html", categories=categories)
 
