@@ -4,108 +4,84 @@
     <h3 class="grey-text text-lighten-2 center-align">New Review</h3>
 
 
-    <!-- <div class="row">
-        <form class="col s12" method="POST" action="">
+    <div class="row card-panel">
+        <form class="col s12 center-align" method="POST" action="">
+            <div class="row">
+                <div class="input-field">
+                    <i class="fas fa-book prefix"></i>
+                    <input id="book_title" name="book_title" minlength="1" maxlength="50"
+                        type="text" class="validate" required>
+                    <label for="book_title">Book Title</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <i class="fas fa-user-edit prefix"></i>
+                    <input id="author_name" name="author_name" minlength="2" maxlength="40"
+                        type="text" class="validate" required>
+                    <label for="author_name">Author</label>
+                </div>
+            </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">First Name</label>
+                    <i class="far fa-folder-open prefix"></i>
+                    <select id="category_name" name="category_name">
+                        <option value="" disabled selected>Choose Category</option>
+                        {% for category in categories %}
+                        <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="category_name">Choose Category</label>
                 </div>
-                <div class="input-field col s12">
-                    <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Telephone</label>
-                </div>
-            </div>
-        </form>
-    </div> -->
-
-
-<div class="row">
-    <form class="col s12 center-align" method="POST" action="">
-        <div class="card-panel grey lighten-2">
-            <div class="card-content black-text ">
-                <span class="card-title">
-                    <div class="row">
-                        <div class="input-field">
-                            <i class="fas fa-book prefix"></i>
-                            <input id="book_title" name="book_title" minlength="1" maxlength="50"
-                                type="text" class="validate" required>
-                            <label for="book_title">Book Title</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field">
-                            <i class="fas fa-user-edit prefix"></i>
-                            <input id="author_name" name="author_name" minlength="2" maxlength="40"
-                                type="text" class="validate" required>
-                            <label for="author_name">Author</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="far fa-folder-open prefix"></i>
-                            <select id="category_name" name="category_name">
-                                <option value="" disabled selected>Choose Category</option>
-                                {% for category in categories %}
-                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                                {% endfor %}
-                            </select>
-                            <label for="category_name">Choose Category</label>
-                        </div>
-                    </div>    
-                    <div class="row">
-                        <div class="input-field">
-                            <i class="far fa-comment-dots prefix"></i>
-                            <input id="language" name="language" minlength="5" maxlength="40"
-                                type="text" class="validate" required>
-                            <label for="language">Language</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field">
-                            <i class="far fa-file-alt prefix"></i>
-                            <input id="page_length" name="page_length" minlength="1" maxlength="6"
-                                type="text" class="validate" required>
-                            <label for="page_length">Length in pages</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field">
-                            <i class="far fa-calendar-alt prefix"></i>
-                            <input id="published_date" name="published_date" minlength="4" maxlength="10"
-                                type="text" class="validate" required>
-                            <label for="published_date">Published date</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field">
-                            <i class="fas fa-pen-fancy prefix"></i>
-                            <textarea id="review_description" name="review_description"
-                                minlength="50" maxlength="3500" class="materialize-textarea"
-                                required></textarea>
-                            <label for="review_description">Write a review here . . .</label>
-                        </div>    
-                    </div>
-                    <div class="row">
-                        <div class="input-field col">
-                            <div class="switch">
-                                <i class="fas fa-exclamation-triangle prefix"></i>
-                                <label for="explicit_content">
-                                    Explicit Content
-                                    <input type="checkbox" id="explicit_content" name="explicit_content">
-                                    <span class="lever"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>                                                             
-                </span>
-                <div>
-                    <button>Add Review</button>
-                    <button>Undo</button>
+            </div>    
+            <div class="row">
+                <div class="input-field">
+                    <i class="far fa-comment-dots prefix"></i>
+                    <input id="language" name="language" minlength="5" maxlength="40"
+                        type="text" class="validate" required>
+                    <label for="language">Language</label>
                 </div>
             </div>
+            <div class="row">
+                <div class="input-field">
+                    <i class="far fa-file-alt prefix"></i>
+                    <input id="page_length" name="page_length" minlength="1" maxlength="6"
+                        type="text" class="validate" required>
+                    <label for="page_length">Length in pages</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <i class="far fa-calendar-alt prefix"></i>
+                    <input id="published_date" name="published_date" minlength="4" maxlength="10"
+                        type="text" class="validate" required>
+                    <label for="published_date">Published date</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <i class="fas fa-pen-fancy prefix"></i>
+                    <textarea id="review_description" name="review_description"
+                        minlength="50" maxlength="3500" class="materialize-textarea"
+                        required></textarea>
+                    <label for="review_description">Write a review here . . .</label>
+                </div>    
+            </div>
+            <div class="row">
+                <div class="input-field col">
+                    <div class="switch">
+                        <i class="fas fa-exclamation-triangle prefix"></i>
+                        <label for="explicit_content">
+                            Explicit Content
+                            <input type="checkbox" id="explicit_content" name="explicit_content">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>                                                             
+        <div>
+            <button>Add Review</button>
+            <button>Undo</button>
         </div>
     </form>
 </div>
