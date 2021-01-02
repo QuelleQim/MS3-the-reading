@@ -111,7 +111,6 @@ def add_review():
             "published_date": request.form.get("published_date"),
             "review_description": request.form.get("review_description"),
             "explicit_content": explicit_content,
-            # Funkar ej
             "created_by": session["user"]
         }
         mongo.db.reviews.insert_one(review)

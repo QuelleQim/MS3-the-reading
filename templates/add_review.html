@@ -5,7 +5,7 @@
 
 
     <div class="row card-panel">
-        <form class="col s12 center-align" method="POST" action="{{ url_for('add_review') }}">
+        <form class="col s12" method="POST" action="{{ url_for('add_review') }}">
             <!-- book title input field -->
             <div class="row">
                 <div class="input-field">
@@ -26,10 +26,10 @@
             </div>
             <!-- choose category collapisble field -->
             <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field">
                     <i class="far fa-folder-open prefix"></i>
-                    <select id="category_name" name="category_name">
-                        <option value="" disabled selected>Choose Category</option>
+                    <select id="category_name" name="category_name" class="validate" required>
+                        <option value="" disabled selected>Book Category</option>
                         {% for category in categories %}
                         <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                         {% endfor %}
