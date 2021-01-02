@@ -3,10 +3,9 @@
 
     <h3 class="grey-text text-lighten-2 center-align">All Reviews</h3>
 
-    <div class="row">
+    <ul class="row">
         {% for review in reviews %}
-        <div class="col s12 m11 ">
-            <!-- <div class="card"> -->
+        <li>
                 <div class="card-content grey lighten-2 card-panel">
                     <div class="col s3">
                         <img src="static/images/book-image.jpg" alt="Book image">
@@ -39,10 +38,9 @@
                         </button>
                     </div>
                 </div>
-            <!-- </div> -->
-        </div>
+        </li>
         {% endfor %}
-    </div>
+    </ul>
 
 
 {% endblock %}
