@@ -30,12 +30,12 @@
                 <br>
                 </p>
                 <div class="center-align">
-                    <button type="submit" class="btn blue accent-4 white-text">
+                    <a href="{{ url_for('edit_review', review_id=review._id) }}" class="btn blue accent-4 white-text">
                         Edit Review
-                    </button>
-                    <button type="submit" class="btn red accent-4 white-text">
+                    </a>
+                    <a href="" class="btn red accent-4 white-text">
                         Delete Review
-                    </button>
+                    </a>
                 </div>
             </div>
         </li>
