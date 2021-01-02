@@ -6,38 +6,38 @@
     <ul class="row">
         {% for review in reviews %}
         <li>
-                <div class="card-content grey lighten-2 card-panel">
-                    <div class="col s3">
-                        <img src="static/images/book-image.jpg" alt="Book image">
-                    </div>
-                    <p>
-                    {{ review.book_name}}
-                    <br>
-                    {{ review.author_name}}
-                    <br>
-                    {{ review.category_name}}
-                    <br>
-                    {{ review.published_date}}
-                    <br>
-                    {{ review.review_description}}
-                    <br>
-                    {% if review.explicit_content == "on" %}
-                    <i class="fas fa-exclamation-triangle tooltipped"
-                        data-position="bottom" data-tooltip="Explicit content!"></i>
-                    <br>
-                    <em>By: {{ review.created_by }}</em>   
-                    {% endif %}
-                    <br>
-                    </p>
-                    <div class="center-align">
-                        <button type="submit" class="btn blue accent-4 white-text">
-                            Edit Review
-                        </button>
-                        <button type="submit" class="btn red accent-4 white-text">
-                            Delete Review
-                        </button>
-                    </div>
+            <div class="card-content grey lighten-2 card-panel">
+                <div class="col s3">
+                    <img src="static/images/book-image.jpg" alt="Book image">
                 </div>
+                <p>
+                {{ review.book_name}}
+                <br>
+                {{ review.author_name}}
+                <br>
+                {{ review.category_name}}
+                <br>
+                {{ review.published_date}}
+                <br>
+                {{ review.review_description}}
+                <br>
+                {% if review.explicit_content == "on" %}
+                <i class="fas fa-exclamation-triangle tooltipped"
+                    data-position="bottom" data-tooltip="Explicit content!"></i>
+                <br>
+                <em>By: {{ review.created_by }}</em>   
+                {% endif %}
+                <br>
+                </p>
+                <div class="center-align">
+                    <button type="submit" class="btn blue accent-4 white-text">
+                        Edit Review
+                    </button>
+                    <button type="submit" class="btn red accent-4 white-text">
+                        Delete Review
+                    </button>
+                </div>
+            </div>
         </li>
         {% endfor %}
     </ul>
