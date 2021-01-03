@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="grey-text text-lighten-2 center-align">New Review</h3>
+
+
+    <div class="row card-panel">
+        <form class="col s12" method="POST" action="{{ url_for('add_review') }}">
+            <!-- book title input field -->
+            <div class="row">
+                <div class="input-field">
+                    <i class="fas fa-book prefix"></i>
+                    <input id="book_name" name="book_name" minlength="1" maxlength="50"
+                        type="text" class="validate" required>
+                    <label for="book_name">Book Title</label>
+                </div>
+            </div>
+            <!-- author input field -->
+            <div class="row">
+                <div class="input-field">
+                    <i class="fas fa-user-edit prefix"></i>
+                    <input id="author_name" name="author_name" minlength="2" maxlength="40"
+                        type="text" class="validate" required>
+                    <label for="author_name">Author</label>
+                </div>
+            </div>
+            <!-- choose category collapisble field -->
+            <div class="row">
+                <div class="input-field">
+                    <i class="far fa-folder-open prefix"></i>
+                    <select id="category_name" name="category_name" class="validate" required>
+                        <option value="" disabled selected>Book Category</option>
+                        {% for category in categories %}
+                        <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="category_name">Choose Category</label>
+                </div>
+            </div>    
+            <!-- language input field -->
+            <div class="row">
+                <div class="input-field">
+                    <i class="far fa-comment-dots prefix"></i>
+                    <input id="language" name="language" minlength="5" maxlength="40"
+                        type="text" class="validate" required>
+                    <label for="language">Language</label>
+                </div>
+            </div>
+            <!-- page length input field -->
+            <div class="row">
+                <div class="input-field">
+                    <i class="far fa-file-alt prefix"></i>
+                    <input id="page_length" name="page_length" minlength="1" maxlength="6"
+                        type="text" class="validate" required>
+                    <label for="page_length">Length in pages</label>
+                </div>
+            </div>
+            <!-- published date input field -->
+            <div class="row">
+                <div class="input-field">
+                    <i class="far fa-calendar-alt prefix"></i>
+                    <input id="published_date" name="published_date" minlength="4" maxlength="10"
+                        type="text" class="validate" required>
+                    <label for="published_date">Published date</label>
+                </div>
+            </div>
+            <!-- write a review input field -->
+            <div class="row">
+                <div class="input-field">
+                    <i class="fas fa-pen-fancy prefix"></i>
+                    <textarea id="review_description" name="review_description"
+                        minlength="50" maxlength="3500" class="materialize-textarea"
+                        required></textarea>
+                    <label for="review_description">Write a review here . . .</label>
+                </div>    
+            </div>
+            <!-- explicit content toggle button -->
+            <div class="row">
+                <div class="input-field col">
+                    <div class="switch">
+                        <i class="fas fa-exclamation-triangle prefix"></i>
+                        <label for="explicit_content">
+                            Explicit Content
+                            <input type="checkbox" id="explicit_content" name="explicit_content">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>           
+            <!-- submit button -->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button type="submit" class="btn green accent-4 white-text">
+                        Add Review
+                    </button>
+                    <button type="submit" class="btn red accent-4 white-text">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+{% endblock %}
+
