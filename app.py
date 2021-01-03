@@ -103,7 +103,7 @@ def add_review():
     if request.method == "POST":
         explicit_content = "on" if request.form.get("explicit_content") else "off"
         review = {
-            "book_title": request.form.get("book_title"),
+            "book_name": request.form.get("book_name"),
             "author_name": request.form.get("author_name"),
             "category_name": request.form.get("category_name"),
             "language": request.form.get("language"),
@@ -126,7 +126,7 @@ def edit_review(review_id):
     if request.method == "POST":
         explicit_content = "on" if request.form.get("explicit_content") else "off"
         submit = {
-            "book_title": request.form.get("book_title"),
+            "book_name": request.form.get("book_name"),
             "author_name": request.form.get("author_name"),
             "category_name": request.form.get("category_name"),
             "language": request.form.get("language"),
