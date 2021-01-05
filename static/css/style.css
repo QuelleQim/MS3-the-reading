@@ -1,7 +1,6 @@
 body {
     background-image: url("/static/images/books.jpg");
     background-color: grey;
-    /* background-size: cover; */
     background-repeat: repeat-y;
     max-width: 100%;
     height: auto;
@@ -55,14 +54,15 @@ nav ul a {
 
 .page-footer {
     background-color: #3c4048;
+    margin-top: 50px;
+
 }
 
 .social-links {
-    /* width: 30px;
-    height: 30px; */
     font-size: 30px;
     padding: 5px;
 }
+
 
 
 /* categories */
