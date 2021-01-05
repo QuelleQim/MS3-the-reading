@@ -1,11 +1,17 @@
 body {
     background-image: url("/static/images/books.jpg");
     background-color: grey;
-    background-position: center;
     /* background-size: cover; */
     background-repeat: repeat-y;
     max-width: 100%;
     height: auto;
+}
+
+.header {
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3c4048;
 }
 
 .btn {
@@ -44,7 +50,7 @@ nav ul a {
 .flashes h4 {
     line-height: 2;
     color: white;
-    background-color: #565a63;
+    background-color: #71747a;
 }
 
 
