@@ -53,7 +53,16 @@ nav ul a {
     background-color: #71747a;
 }
 
+.page-footer {
+    background-color: #3c4048;
+}
 
+.social-links {
+    /* width: 30px;
+    height: 30px; */
+    font-size: 30px;
+    padding: 5px;
+}
 
 
 /* categories */
