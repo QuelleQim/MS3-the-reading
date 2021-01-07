@@ -6,12 +6,14 @@ body {
     height: auto;
 }
 
+
 .header {
     margin: 30px;
     padding: 10px;
     border-radius: 10px;
     background-color: #3c4048;
 }
+
 
 .btn {
     margin: 10px 10px 0 10px;
@@ -27,15 +29,16 @@ body {
     /* margin: 0 10px 0 10px; */
 }
 
-
 .navbar {
     background-color: #3c4048;
     height: 120px;
 }
 
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
+
 
 nav ul a {
     font-size: 25px;
@@ -46,11 +49,13 @@ nav ul a {
     border-radius: 10px;
 }
 
+
 .flashes h4 {
     line-height: 2;
     color: white;
     background-color: #71747a;
 }
+
 
 .page-footer {
     background-color: #3c4048;
@@ -58,9 +63,34 @@ nav ul a {
 
 }
 
+
 .social-links {
     font-size: 30px;
     padding: 5px;
+}
+
+
+.welcome-header {
+    background-color: #dadbdb;
+    opacity: 0.85;
+    color: rgb(68, 68, 68);
+    padding: 20px;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.welcome-header h2 {
+    letter-spacing: 3px;
+}
+
+
+.welcome-header p {
+    margin: 0;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
 }
 
 
@@ -72,32 +102,18 @@ nav ul a {
 }
 
 
+
 /* reviews */
 
 .no-result {
     margin-bottom: 132px;
 }
 
-.welcome-header {
-    background-color: #dadbdb;
-    opacity: 0.85;
-    color: rgb(68, 68, 68);
-    padding: 20px;
-    width: 100%;
-    font-family: 'Playfair Display', serif;
+
+.search-icon {
+    color: #3c4048;
 }
 
-.welcome-header h2 {
-    letter-spacing: 3px;
-}
-
-.welcome-header p {
-    margin: 0;
-    font-size: large;
-    font-weight: 500;
-    letter-spacing: 2px;
-    padding-bottom: 20px;
-}
 
 
 /* log in and register */
