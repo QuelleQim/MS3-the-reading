@@ -78,6 +78,18 @@ nav ul a {
     margin-bottom: 132px;
 }
 
+.welcome-header {
+    background-color: #c3c4c5;
+    opacity: 0.7;
+    color: black;
+    padding: 20px;
+    width: 100%;
+}
+
+.welcome-header p {
+    margin: 0;
+}
+
 
 /* log in and register */
 

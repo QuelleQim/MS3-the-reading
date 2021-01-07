@@ -1,7 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <div class="center-align welcome-header">
+        <p>By book lovers, for book lovers . . .
+            Love reading books but don't know what to read next?
+            Here you can find like minded people, share a review
+            and read others in pursuit of your next literal adventrue.
+            Register to post your own reviews!
+        </p>
+    </div>
+
+
     <h3 class="header grey-text text-lighten-2 center-align">All Reviews</h3>
+
+
 
     <div class="row card-content grey lighten-2">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
@@ -70,5 +82,15 @@
         <h3 class="header red-text text-lighten-2 center-align no-result">No Reviews Found</h3>
     {% endif %}
 
+
+    <!-- <ul class="pagination center-align">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul> -->
 
 {% endblock %}
