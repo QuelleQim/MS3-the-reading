@@ -70,3 +70,11 @@ nav ul a {
 .btn-large {
     width: 200px;
 }
+
+/* log in and register */
+
+.login-reg-bottom-text {
+    background-color: #3c4048;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+}
