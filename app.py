@@ -198,6 +198,11 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
+@app.route("/information")
+def information():
+    return render_template("information.html")
+
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
