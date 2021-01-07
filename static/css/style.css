@@ -71,6 +71,14 @@ nav ul a {
     width: 200px;
 }
 
+
+/* reviews */
+
+.no-result {
+    margin-bottom: 132px;
+}
+
+
 /* log in and register */
 
 .login-reg-bottom-text {
