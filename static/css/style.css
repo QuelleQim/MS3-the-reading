@@ -79,15 +79,19 @@ nav ul a {
 }
 
 .welcome-header {
-    background-color: #c3c4c5;
-    opacity: 0.7;
-    color: black;
+    background-color: #dadbdb;
+    opacity: 0.85;
+    color: rgb(68, 68, 68);
     padding: 20px;
     width: 100%;
+    font-family: 'Playfair Display', serif;
 }
 
 .welcome-header p {
     margin: 0;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 
