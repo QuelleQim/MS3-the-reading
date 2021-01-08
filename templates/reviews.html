@@ -61,6 +61,10 @@
                     <a href="{{ url_for('delete_review', review_id=review._id) }}" class="btn red accent-4 white-text">
                         Delete Review
                     </a>
+                    {% elif session.user|lower == "admin"|lower %}
+                        <a href="{{ url_for('delete_review', review_id=review._id) }}" class="btn red accent-4 white-text">
+                            Delete Review
+                        </a>
                     {% endif %}
                 </div>
             </div>
