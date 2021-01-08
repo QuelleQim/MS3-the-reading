@@ -20,6 +20,15 @@ body {
 
 }
 
+.accent-grey {
+    color: #3c4048;
+}
+
+.accent-light {
+    background-color: #dadbdb;
+}
+
+
 /* Base template */
 
 .brand-logo {
@@ -77,12 +86,13 @@ nav ul a {
 .page-footer {
     background-color: #3c4048;
     margin-top: 50px;
-    padding-top: 30px;
+    padding-top: 20px;
 
 }
 
 .footer-header {
     margin: 0px;
+    padding-top: 10px;
 }
 
 .social-links-div {

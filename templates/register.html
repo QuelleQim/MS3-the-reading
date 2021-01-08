@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="col s12 l8 offset-l2 header grey-text text-lighten-2 center-align">Register</h3>
+    <h3 class="col s12 l8 offset-l2 header grey-text text-lighten-2 center-align text-shadow">Register</h3>
 
     <div class="row">
         <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
@@ -9,7 +9,7 @@
                 <!-- username -->
                 <div class="row">
 					<div class="input-field col s12">
-						<i class="fas fa-user-plus prefix light-blue-text text-darken-4"></i>
+						<i class="fas fa-user-plus prefix accent-grey"></i>
 						<input id="username" name="username" type="text" minlength="3"
                             maxlength="15" pattern="^[a-zA-Z0-9]{3,15}$" class="validate" required>
 						<label for="username">Username</label>
@@ -18,7 +18,7 @@
                 <!-- passowrd -->
                 <div class="row">
                     <div class="input-field col s12">
-						<i class="fas fa-user-lock prefix light-blue-text text-darken-4"></i>
+						<i class="fas fa-user-lock prefix accent-grey"></i>
                         <input id="password" name="password" type="password" minlength="5"
                             maxlength="20" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                         <label for="password">Password</label>
@@ -26,7 +26,7 @@
                 </div>
                 <!-- register -->
                 <div class="row">
-                    <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
+                    <button type="submit" class="col s12 btn-large text-shadow white-text #546e7a blue-grey darken-1">
                         Register <i class="fas fa-sign-in-alt"></i>
                     </button>
                 </div>
