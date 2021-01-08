@@ -136,5 +136,8 @@ nav ul a {
 }
 
 
-/*  */
+/* profile */
 
+.delete-account-btn {
+    width: auto;
+}
