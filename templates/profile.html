@@ -53,6 +53,9 @@
                 <em>By: {{ review.created_by }}</em>   
                 </p>
                 <div class="center-align">
+                    <a href="{{ url_for('single_review') }}" class="btn teel darken-2 white-text">
+                        Full Review
+                    </a>
                     <a href="{{ url_for('edit_review', review_id=review._id) }}" class="btn blue accent-4 white-text">
                         Edit Review
                     </a>
