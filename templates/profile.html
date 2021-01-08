@@ -12,9 +12,9 @@
         <div class="col s12 m10 offset-m1">
             <div class="center-align card-content grey lighten-2 card-panel">
                <h5>Total amount of reviews:</h5>
-               <p></p>
+               <h6>{{ reviews|length }}</h6>
                <h5>Member since: </h5>
-               <p></p>
+               <h6></h6>
                <br>
                <br>
                <button class="btn delete-account-btn red accent-4">Delete account</button>
@@ -29,30 +29,28 @@
         <li>
             <div class="hoverable card-content grey lighten-2 card-panel">
                 <div class="col l3 m4">
-                    <img src="static/images/book-image.jpg" alt="Book image">
+                    <img src="/static/images/book-image.jpg" alt="Book image">
                 </div>
                 <p>
-                {{ review.book_name}}
+                {{ review.book_name }}
                 <br>
-                {{ review.author_name}}
+                {{ review.author_name }}
                 <br>
-                {{ review.category_name}}
+                {{ review.category_name }}
                 <br>
-                {{ review.language}}
+                {{ review.language }}
                 <br>
-                {{ review.page_length}}
+                {{ review.page_length }}
                 <br>
-                {{ review.published_date}}
+                {{ review.published_date }}
                 <br>
-                <p class="truncate">{{ review.review_description}}</p>
-                <br>
+                <p class="truncate">{{ review.review_description }}</p>
                 {% if review.explicit_content == "on" %}
                 <i class="fas fa-exclamation-triangle tooltipped"
                     data-position="bottom" data-tooltip="Explicit content!"></i>
                 <br>
-                <em>By: {{ review.created_by }}</em>   
                 {% endif %}
-                <br>
+                <em>By: {{ review.created_by }}</em>   
                 </p>
                 <div class="center-align">
                     <a href="{{ url_for('edit_review', review_id=review._id) }}" class="btn blue accent-4 white-text">

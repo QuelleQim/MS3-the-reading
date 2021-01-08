@@ -33,27 +33,25 @@
                     <img src="static/images/book-image.jpg" alt="Book image">
                 </div>
                 <p>
-                {{ review.book_name}}
+                <em>{{ review.book_name }}</em>
                 <br>
-                {{ review.author_name}}
+                {{ review.author_name }}
                 <br>
-                {{ review.category_name}}
+                {{ review.category_name }}
                 <br>
-                {{ review.language}}
+                {{ review.language }}
                 <br>
-                {{ review.page_length}}
+                {{ review.page_length }}
                 <br>
-                {{ review.published_date}}
+                {{ review.published_date }}
                 <br>
-                <p class="truncate">{{ review.review_description}}</p>
-                <br>
+                <p class="truncate">{{ review.review_description }}</p>
                 {% if review.explicit_content == "on" %}
                 <i class="fas fa-exclamation-triangle tooltipped"
                     data-position="bottom" data-tooltip="Explicit content!"></i>
                 <br>
-                <em>By: {{ review.created_by }}</em>   
                 {% endif %}
-                <br>
+                <em>By: {{ review.created_by }}</em>
                 </p>
                 <div class="center-align">
                     {% if session.user|lower == review.created_by|lower %}

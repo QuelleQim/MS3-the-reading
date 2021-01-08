@@ -115,7 +115,10 @@ the current focus with this project and therefore not Implemented.
 
 
 ## Credits
+Review description summary for book reviews:
 
+- Dr. Jekyll and Mr. Hyde
+[www.bbc.co.uk](https://www.bbc.co.uk/bitesize/guides/z88wjxs/revision/1)
 
 ### Content
 
