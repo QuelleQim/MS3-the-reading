@@ -139,9 +139,9 @@ def add_review():
 
 
 # Check this section!
-@app.route("/single_review")
-def single_review():
-    review = mongo.db.reviews.find()
+@app.route("/single_review/<review_id>")
+def single_review(review_id):
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     return render_template("full_review.html", review=review)
 # 
 

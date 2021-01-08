@@ -54,7 +54,7 @@
                 <em>By: {{ review.created_by }}</em>
                 </p>
                 <div class="center-align">
-                    <a href="{{ url_for('single_review') }}" class="btn teel darken-2 white-text">
+                    <a href="{{ url_for('single_review', review_id=review._id) }}" class="btn teel darken-2 white-text">
                         Full Review
                     </a>
                     {% if session.user|lower == review.created_by|lower %}

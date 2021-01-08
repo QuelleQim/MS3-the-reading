@@ -2,11 +2,10 @@
 {% block content %}
 
     <h3 class="header grey-text text-lighten-2 center-align">
-        {{ review_id }}
+        {{ review.book_name }}
     </h3>
 
 <ul class="row">
-        {% for review in reviews %}
         <li>
             <div class="hoverable card-content grey lighten-2 card-panel">
                 <div class="col l3 m4">
@@ -49,7 +48,6 @@
                 </div>
             </div>
         </li>
-        {% endfor %}
     </ul>
 
 
