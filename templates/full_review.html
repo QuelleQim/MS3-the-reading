@@ -2,7 +2,52 @@
 {% block content %}
 
 
-
+<ul class="row">
+        {% for review in reviews %}
+        <li>
+            <div class="hoverable card-content grey lighten-2 card-panel">
+                <div class="col l3 m4">
+                    <img src="static/images/book-image.jpg" alt="Book image">
+                </div>
+                <p>
+                <em>{{ review.book_name }}</em>
+                <br>
+                {{ review.author_name }}
+                <br>
+                {{ review.category_name }}
+                <br>
+                {{ review.language }}
+                <br>
+                {{ review.page_length }}
+                <br>
+                {{ review.published_date }}
+                <br>
+                <p class="truncate">{{ review.review_description }}</p>
+                {% if review.explicit_content == "on" %}
+                <i class="fas fa-exclamation-triangle tooltipped"
+                    data-position="bottom" data-tooltip="Explicit content!"></i>
+                <br>
+                {% endif %}
+                <em>By: {{ review.created_by }}</em>
+                </p>
+                <div class="center-align">
+                    {% if session.user|lower == review.created_by|lower %}
+                    <a href="{{ url_for('edit_review', review_id=review._id) }}" class="btn blue accent-4 white-text">
+                        Edit Review
+                    </a>
+                    <a href="{{ url_for('delete_review', review_id=review._id) }}" class="btn red accent-4 white-text">
+                        Delete Review
+                    </a>
+                    {% elif session.user|lower == "admin"|lower %}
+                        <a href="{{ url_for('delete_review', review_id=review._id) }}" class="btn red accent-4 white-text">
+                            Delete Review
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
 
 
 

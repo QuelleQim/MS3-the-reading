@@ -138,6 +138,13 @@ def add_review():
     return render_template("add_review.html", categories=categories)
 
 
+# @app.route("/full_review/<review_id>")
+# def full_review(review_id):
+#     mongo.db.reviews.find()
+#     full_review = mongo.db.categories.find(review_id))
+#     return render_template("full_template.html")
+
+
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
     if request.method == "POST":
