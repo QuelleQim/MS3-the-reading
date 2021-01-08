@@ -138,11 +138,12 @@ def add_review():
     return render_template("add_review.html", categories=categories)
 
 
-# @app.route("/full_review/<review_id>")
-# def full_review(review_id):
-#     mongo.db.reviews.find()
-#     full_review = mongo.db.categories.find(review_id))
-#     return render_template("full_template.html")
+# Check this section!
+@app.route("/single_review")
+def single_review():
+    review = mongo.db.reviews.find()
+    return render_template("full_review.html", review=review)
+# 
 
 
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
