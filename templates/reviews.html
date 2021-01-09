@@ -29,31 +29,36 @@
         {% for review in reviews %}
         <li>
             <div class="hoverable card-content grey lighten-2 card-panel">
-                <div class="col l3 m4">
-                    <img src="static/images/book-image.jpg" alt="Book image">
+                <div class="col s12">
+                    <div class="col l3 m4">
+                        <img src="static/images/book-image.jpg" alt="Book image">
+                    </div>
+                    <div class="col l4 m4">
+                        <em>{{ review.book_name }}</em>
+                        <br>
+                        {{ review.author_name }}
+                        <br>
+                        {{ review.category_name }}
+                        <br>
+                        {{ review.language }}
+                    </div>
+                    <div class="col l4 m4">
+                        {{ review.page_length }} pages
+                        <br>
+                        {{ review.published_date }}
+                        <br>
+                        {% if review.explicit_content == "on" %}
+                        <i class="fas fa-exclamation-triangle tooltipped"
+                            data-position="bottom" data-tooltip="Explicit content!"></i>
+                        <br>
+                        {% endif %}
+                        <em>By: {{ review.created_by }}</em>
+                    </div>
                 </div>
-                <p>
-                <em>{{ review.book_name }}</em>
-                <br>
-                {{ review.author_name }}
-                <br>
-                {{ review.category_name }}
-                <br>
-                {{ review.language }}
-                <br>
-                {{ review.page_length }}
-                <br>
-                {{ review.published_date }}
-                <br>
-                <p class="truncate">{{ review.review_description }}</p>
-                {% if review.explicit_content == "on" %}
-                <i class="fas fa-exclamation-triangle tooltipped"
-                    data-position="bottom" data-tooltip="Explicit content!"></i>
-                <br>
-                {% endif %}
-                <em>By: {{ review.created_by }}</em>
-                </p>
-                <div class="center-align">
+                <div class="section col s12">
+                    <p class="truncate">{{ review.review_description }}</p>
+                </div>
+                <div class="center-align section">
                     <a href="{{ url_for('single_review', review_id=review._id) }}" class="btn teel darken-2 white-text">
                         Full Review
                     </a>
