@@ -25,7 +25,7 @@
     </div>
 
 
-    <ul class="collapsible grey lighten-2">
+    <!-- <ul class="collapsible grey lighten-2">
         <li>
             <div class="collapsible-header center-align white-text">Sort/ Filter</div>
             <div class="collapsible-body"><span>Category</span></div>
@@ -48,15 +48,36 @@
 
                 </div>
             <div class="collapsible-body"><span>Grade</span></div>
-                <div>Highest Rated</div>
-                <div>Lowest Rated</div>
+                <p>Highest Rated</p>
+                <p>Lowest Rated</p>
             <div class="collapsible-body"><span>Length</span></div>
             <div>
-                <h6>Shortest</h6>
-                <h6>Longest</h6>
+                <button>Shortest</button>
+                <p>Longest</p>
             </div>
         </li>
-    </ul>
+    </ul> -->
+
+
+    <div class="row">
+        <div class="col s12">
+            <div class="center-align card-content grey lighten-2 card-panel">
+                <div class="input-field">
+                    <i class="far fa-folder-open prefix"></i>
+                    <select id="category_name" name="category_name" class="validate" required>
+                    <option value="" disabled>Book Category</option>
+                        {% for category in categories %}
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="category_name">Choose Category</label>
+                </div>
+            </div>
+            <div>Grade</div>
+            <div>Length</div>
+        </div>
+    </div>
+
 
 
     {% if reviews|length > 0 %}
