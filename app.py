@@ -23,7 +23,9 @@ mongo = PyMongo(app)
 @app.route("/get_reviews")
 def get_reviews():
     reviews = list(mongo.db.reviews.find())
-    return render_template("reviews.html", reviews=reviews)
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    review = mongo.db.reviews.find()
+    return render_template("reviews.html", review=review, reviews=reviews, categories=categories)
 
 
 @app.route("/search", methods=["GET", "POST"])

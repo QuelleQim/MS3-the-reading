@@ -110,10 +110,14 @@ nav ul a {
 
 /* categories */
 
+.collapsible-header {
+    background-color: #3c4048;
+    /* text-align: center !important; */
+}
+
 .btn-large {
     width: 200px;
 }
-
 
 
 /* reviews */

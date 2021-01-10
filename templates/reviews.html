@@ -25,11 +25,36 @@
     </div>
 
 
-    <ul class="collapsible">
+    <ul class="collapsible grey lighten-2">
         <li>
-            <div class="collapsible-header"><i class="material-icons"></i>Sort/ Filter</div>
+            <div class="collapsible-header center-align white-text">Sort/ Filter</div>
+            <div class="collapsible-body"><span>Category</span></div>
+                <div>
 
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="input-field">
+                        <i class="far fa-folder-open prefix"></i>
+                        <select id="category_name" name="category_name" class="validate" required>
+                            <option value="" disabled>Book Category</option>
+                            {% for category in categories %}
+                                {% if category.category_name == review.category_name %}
+                                    <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                                {% else %}
+                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                        <label for="category_name">Choose Category</label>
+                    </div>
+
+                </div>
+            <div class="collapsible-body"><span>Grade</span></div>
+                <div>Highest Rated</div>
+                <div>Lowest Rated</div>
+            <div class="collapsible-body"><span>Length</span></div>
+            <div>
+                <h6>Shortest</h6>
+                <h6>Longest</h6>
+            </div>
         </li>
     </ul>
 
