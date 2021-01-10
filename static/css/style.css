@@ -126,6 +126,9 @@ nav ul a {
     margin-bottom: 132px;
 }
 
+.review-filter-input {
+    margin: 10px;
+}
 
 .search-icon {
     color: #3c4048;

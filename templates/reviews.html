@@ -3,81 +3,60 @@
 
 
 
-    <h3 class="header grey-text text-lighten-2 center-align text-shadow">All Reviews</h3>
+    <h3 class="header grey-text text-lighten-2 text-shadow">All Reviews</h3>
 
 
     <div class="row card-content grey lighten-2">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
-            <div class="row center-align">
+            <div class="row">
                 <div class="input-field col s10 offset-s1">
                     <i class="fas fa-search prefix search-icon"></i>
                     <input type="text" name="query" id="query" class="validate" required>
                     <label for="query"> Search here . . .</label>
                 </div>
-                <div class="col s12 center-align">
-                    <button type="submit" class="btn blue darken-2">
-                        Search
-                    </button>
-                    <a href="{{ url_for('get_reviews') }}" class="red darken-2 btn text-shadow">Reset</a>
+                <div class="col s10 offset-s1">
+                    <div class="valign-wrapper grey lighten-2">
+                        <div class="input-field review-filter-input">
+                            <i class="far fa-folder-open prefix"></i>
+                            <select id="category_name" name="category_name" class="validate" required>
+                            <option value="" disabled>Book Category</option>
+                                {% for category in categories %}
+                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                {% endfor %}
+                            </select>
+                            <label for="category_name">Choose Category</label>
+                        </div>
+                        <div class="input-field review-filter-input">
+                            <i class="far fa-bookmark prefix"></i>
+                            <select id="category_name" name="category_name" class="validate" required>
+                            <option value="" disabled>Grade</option>
+                                {% for category in categories %}
+                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                {% endfor %}
+                            </select>
+                            <label for="category_name">Chose Grade</label>
+                        </div>
+                        <div class="input-field review-filter-input">
+                            <i class="far fa-file-alt prefix"></i>
+                            <select id="category_name" name="category_name" class="validate" required>
+                            <option value="" disabled>Length</option>
+                                {% for category in categories %}
+                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                {% endfor %}
+                            </select>
+                            <label for="category_name">Chose Length</label>
+                        </div>
+                    </div>
+                    <div class="col s12 center-align">
+                        <button type="submit" class="btn blue darken-2">
+                            Search
+                        </button>
+                        <a href="{{ url_for('get_reviews') }}" class="red darken-2 btn text-shadow">Reset</a>
+                    </div>
                 </div>
             </div>
         </form>
     </div>
-
-
-    <!-- <ul class="collapsible grey lighten-2">
-        <li>
-            <div class="collapsible-header center-align white-text">Sort/ Filter</div>
-            <div class="collapsible-body"><span>Category</span></div>
-                <div>
-
-                    <div class="input-field">
-                        <i class="far fa-folder-open prefix"></i>
-                        <select id="category_name" name="category_name" class="validate" required>
-                            <option value="" disabled>Book Category</option>
-                            {% for category in categories %}
-                                {% if category.category_name == review.category_name %}
-                                    <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
-                                {% else %}
-                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                                {% endif %}
-                            {% endfor %}
-                        </select>
-                        <label for="category_name">Choose Category</label>
-                    </div>
-
-                </div>
-            <div class="collapsible-body"><span>Grade</span></div>
-                <p>Highest Rated</p>
-                <p>Lowest Rated</p>
-            <div class="collapsible-body"><span>Length</span></div>
-            <div>
-                <button>Shortest</button>
-                <p>Longest</p>
-            </div>
-        </li>
-    </ul> -->
-
-
-    <div class="row">
-        <div class="col s12">
-            <div class="center-align card-content grey lighten-2 card-panel">
-                <div class="input-field">
-                    <i class="far fa-folder-open prefix"></i>
-                    <select id="category_name" name="category_name" class="validate" required>
-                    <option value="" disabled>Book Category</option>
-                        {% for category in categories %}
-                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                        {% endfor %}
-                    </select>
-                    <label for="category_name">Choose Category</label>
-                </div>
-            </div>
-            <div>Grade</div>
-            <div>Length</div>
-        </div>
-    </div>
-
 
 
     {% if reviews|length > 0 %}
