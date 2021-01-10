@@ -114,11 +114,22 @@ the current focus with this project and therefore not Implemented.
 ## Deployment
 
 
-## Credits
-Review description summary for book reviews:
 
-- Dr. Jekyll and Mr. Hyde
+## Credits
+
+- Review description summary for the book Dr. Jekyll and Mr. Hyde:
 [www.bbc.co.uk](https://www.bbc.co.uk/bitesize/guides/z88wjxs/revision/1)
+
+- Review description summary for the book Alice in Wonderland:
+[en.wikipedia.org](https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland)
+
+
+
+- Code for date in python was retrived from w3schools.com
+[/www.w3schools.com](https://www.w3schools.com/python/python_datetime.asp)
+
+
+
 
 ### Content
 

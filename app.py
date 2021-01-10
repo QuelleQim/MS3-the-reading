@@ -47,6 +47,7 @@ def register():
         register = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password")),
+            # Code for date in python was retrived from w3schools.com
             "member_since": datetime.today()
         }
         mongo.db.users.insert_one(register)
