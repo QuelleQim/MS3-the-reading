@@ -88,6 +88,12 @@
                         <br>
                         {% endif %}
                         <em>By: {{ review.created_by }}</em>
+                        <br>
+                        Grade: 
+                        {% for number in range(review.grade) %}
+                            <i class="far fa-bookmark"></i>
+                        {% endfor %}
+                        
                     </div>
                 </div>
                 <div class="section col s12">

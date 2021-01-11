@@ -132,6 +132,7 @@ def add_review():
             "language": request.form.get("language"),
             "page_length": request.form.get("page_length"),
             "published_date": request.form.get("published_date"),
+            "grade": request.form.get("grade"),
             "review_description": request.form.get("review_description"),
             "explicit_content": explicit_content,
             "created_by": session["user"]
@@ -163,6 +164,7 @@ def edit_review(review_id):
             "language": request.form.get("language"),
             "page_length": request.form.get("page_length"),
             "published_date": request.form.get("published_date"),
+
             "review_description": request.form.get("review_description"),
             "explicit_content": explicit_content,
             "created_by": session["user"]
