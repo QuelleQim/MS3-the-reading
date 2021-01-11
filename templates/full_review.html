@@ -5,10 +5,9 @@
         {{ review.book_name }}
     </h3>
 
-    <ul class="row">
-
+    <ul class="row grey lighten-2 card-panel">
         <li>
-            <div class="hoverable card-content grey lighten-2 card-panel">
+            <div class="hoverable card-content">
                 <div class="col s12">
                     <div class="col l3 m4">
                         <img src="/static/images/book-image.jpg" alt="Book image">
@@ -38,7 +37,6 @@
                 <div class="section col s12">
                     <p>{{ review.review_description }}</p>
                 </div>
-
                 <div class="center-align">
                     {% if session.user|lower == review.created_by|lower %}
                     <a href="{{ url_for('edit_review', review_id=review._id) }}" class="btn blue darken-2 white-text">
