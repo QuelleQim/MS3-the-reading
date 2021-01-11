@@ -31,7 +31,7 @@ body {
 }
 
 
-/* Base template */
+/* base template */
 
 .brand-logo {
     height: 120px;
@@ -132,6 +132,10 @@ nav ul a {
 
 .search-icon {
     color: #3c4048;
+}
+
+.search-filter-row {
+    padding-top: 10px;
 }
 
 
