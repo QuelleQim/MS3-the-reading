@@ -32,7 +32,8 @@ def get_reviews():
 def search():
     query = request.form.get("query")
     reviews = list(mongo.db.reviews.find({"$text": {"$search": query}}))
-    return render_template("reviews.html", reviews=reviews)
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("reviews.html", reviews=reviews, categories=categories)
 
 
 @app.route("/register", methods=["GET", "POST"])

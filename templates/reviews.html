@@ -19,7 +19,7 @@
                         <div class="input-field review-filter-input">
                             <i class="far fa-folder-open prefix"></i>
                             <select id="category_name" name="category_name" class="validate">
-                            <option value="" disabled>Book Category</option>
+                            <option value="" disabled selected>Book Category</option>
                                 {% for category in categories %}
                                     <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                                 {% endfor %}
@@ -28,21 +28,21 @@
                         </div>
                         <div class="input-field review-filter-input">
                             <i class="far fa-bookmark prefix"></i>
-                            <select id="category_name" name="category_name" class="validate">
+                            <select id="" name="category_name" class="validate">
                             <option value="" disabled>Grade</option>
-                                {% for category in categories %}
+                                <!-- {% for category in categories %}
                                     <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                                {% endfor %}
+                                {% endfor %} -->
                             </select>
                             <label for="category_name">Chose Grade</label>
                         </div>
                         <div class="input-field review-filter-input">
                             <i class="far fa-file-alt prefix"></i>
-                            <select id="category_name" name="category_name" class="validate">
+                            <select id="" name="category_name" class="validate">
                             <option value="" disabled>Length</option>
-                                {% for category in categories %}
+                                <!-- {% for category in categories %}
                                     <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                                {% endfor %}
+                                {% endfor %} -->
                             </select>
                             <label for="category_name">Chose Length</label>
                         </div>
