@@ -99,12 +99,19 @@ nav ul a {
 
 .social-links-div {
     margin: 10px;
+
 }
 
 .social-links {
     font-size: 30px;
     padding: 5px;
     color: #dadbdb;
+    border-radius: 5px;
+}
+
+.info-links {
+    padding: 3px;
+    border-radius: 5px;
 }
 
 
