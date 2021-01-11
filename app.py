@@ -103,13 +103,20 @@ def profile(username):
     return redirect(url_for("login"))
 
 
-# @app.route("/delete_user/<user_id>")
-# def delete_user(review_id):
-#     mongo.db.user.remove({"_id": (review_id)})
-#     flash("User Successfully Deleted")
-#     session.pop("user")
-#     return redirect(url_for("login"))
-# Add pop up box with confirmation.
+@app.route("/delete_user/<user_id>")
+def delete_user(user_id):
+    user = mongo.db.users.find_one(
+        {"username": session["user"]})
+    mongo.db.user.remove({"_id": ObjectId(user_id)}),
+    flash("Account Successfully Deleted"),
+    session.pop("user")
+    return redirect(url_for("login"))
+
+#     @app.route("/delete_review/<review_id>")
+#     def delete_review(review_id):
+#     mongo.db.reviews.remove({"_id": ObjectId(review_id)})
+#     flash("Review Successfully Deleted")
+#     return redirect(url_for("get_reviews"))
 
 
 @app.route("/logout")
