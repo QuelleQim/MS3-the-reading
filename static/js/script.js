@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('.tooltipped').tooltip();
     $('select').formSelect();
     $('.collapsible').collapsible();
+    $('.modal').modal();
 
 
     validateMaterializeSelect();
