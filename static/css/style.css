@@ -30,6 +30,10 @@ body {
     background-color: #dadbdb;
 }
 
+strong {
+    font-weight: bolder !important;
+}
+
 
 /* base template */
 
@@ -164,3 +168,5 @@ nav ul a {
     margin: 10px !important;
     padding-left: 10px;
 }
+
+
