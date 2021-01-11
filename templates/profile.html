@@ -25,7 +25,7 @@
                     </div>
                     <div class="modal-footer">
                         <a href="#!" class="modal-close waves-effect waves-red btn-flat">No, Cancel</a>
-                        <a href="{{ url_for('delete_user') }}" class="modal-close waves-effect waves-green btn-flat">Yes, Delete</a>
+                        <a href="{{ url_for('delete_user', user_id=user._id) }}" class="modal-close waves-effect waves-green btn-flat">Yes, Delete</a>
                     </div>
                 </div>
             </div>
