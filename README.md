@@ -124,11 +124,12 @@ the current focus with this project and therefore not Implemented.
 [en.wikipedia.org](https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland)
 
 
-
 - Code for date in python was retrived from w3schools.com
-[/www.w3schools.com](https://www.w3schools.com/python/python_datetime.asp)
+[www.w3schools.com](https://www.w3schools.com/python/python_datetime.asp)
 
 
+- Range for jinja was adapted from jinja.palletsprojects.com
+[jinja.palletsprojects.com](https://jinja.palletsprojects.com/en/2.11.x/templates/)
 
 
 ### Content

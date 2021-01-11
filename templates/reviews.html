@@ -87,13 +87,12 @@
                             data-position="bottom" data-tooltip="Explicit content!"></i>
                         <br>
                         {% endif %}
-                        <em>By: {{ review.created_by }}</em>
-                        <br>
                         Grade: 
                         {% for number in range(review.grade) %}
                             <i class="far fa-bookmark"></i>
                         {% endfor %}
-                        
+                        <br>
+                        <em>By: {{ review.created_by }}</em>
                     </div>
                 </div>
                 <div class="section col s12">
