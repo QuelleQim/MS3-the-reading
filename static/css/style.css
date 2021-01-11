@@ -158,3 +158,9 @@ nav ul a {
 
 /* profile */
 
+/* full review */
+
+.description-div {
+    margin: 10px !important;
+    padding-left: 10px;
+}

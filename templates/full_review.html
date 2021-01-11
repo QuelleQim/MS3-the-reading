@@ -5,9 +5,9 @@
         {{ review.book_name }}
     </h3>
 
-    <ul class="row grey lighten-2 card-panel">
+    <ul class="row grey lighten-2 card-panel hoverable">
         <li>
-            <div class="hoverable card-content">
+            <div class="card-content">
                 <div class="col s12">
                     <div class="col l3 m4">
                         <img src="/static/images/book-image.jpg" alt="Book image">
@@ -34,7 +34,7 @@
                         <em>By: {{ review.created_by }}</em>
                     </div>
                 </div>
-                <div class="section col s12">
+                <div class="section col s12 description-div">
                     <p>{{ review.review_description }}</p>
                 </div>
                 <div class="center-align">
