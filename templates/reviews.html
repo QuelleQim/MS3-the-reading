@@ -28,23 +28,23 @@
                         </div>
                         <div class="input-field review-filter-input">
                             <i class="far fa-bookmark prefix"></i>
-                            <select id="" name="category_name" class="validate">
+                            <select id="grade" name="grade" class="validate">
                             <option value="" disabled>Grade</option>
-                                <!-- {% for category in categories %}
-                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                                {% endfor %} -->
+                                {% for grade in grades %}
+                                    <option value="{{ grade.grade }}">{{ grade.grade }}</option>
+                                {% endfor %}
                             </select>
-                            <label for="category_name">Chose Grade</label>
+                            <label for="grade">Chose Grade</label>
                         </div>
                         <div class="input-field review-filter-input">
                             <i class="far fa-file-alt prefix"></i>
-                            <select id="" name="category_name" class="validate">
+                            <select id="page_length" name="page_length" class="validate">
                             <option value="" disabled>Length</option>
-                                <!-- {% for category in categories %}
-                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                                {% endfor %} -->
+                                {% for page_length in page_lengths %}
+                                    <option value="{{ page_length.page_length }}">{{ page_length.page_length }}</option>
+                                {% endfor %}
                             </select>
-                            <label for="category_name">Chose Length</label>
+                            <label for="page_length">Chose Length</label>
                         </div>
                     </div>
                     <div class="col s12 center-align">
@@ -88,6 +88,7 @@
                         <br>
                         {% endif %}
                         Grade: 
+                        <!-- Range for jinja was adapted from jinja.palletsprojects.com -->
                         {% for number in range(review.grade) %}
                             <i class="far fa-bookmark"></i>
                         {% endfor %}
