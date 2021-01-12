@@ -150,6 +150,8 @@ def add_review():
             "author_name": request.form.get("author_name"),
             "category_name": request.form.get("category_name"),
             "book_language": request.form.get("book_language"),
+            # integer converter retrived from
+            # https://careerkarma.com/blog/python-string-to-int/
             "page_length": int(request.form.get("page_length")),
             "published_date": request.form.get("published_date"),
             "grade": int(request.form.get("grade")),
@@ -183,6 +185,8 @@ def edit_review(review_id):
             "author_name": request.form.get("author_name"),
             "category_name": request.form.get("category_name"),
             "book_language": request.form.get("book_language"),
+            # integer converter retrived from
+            # https://careerkarma.com/blog/python-string-to-int/
             "page_length": int(request.form.get("page_length")),
             "published_date": request.form.get("published_date"),
             "grade": int(request.form.get("grade")),
