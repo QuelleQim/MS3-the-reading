@@ -40,8 +40,8 @@ def search():
     def get_page_length(review):
         return review.get('page_length')
 
-    # if categories == "category_name":
-    #     reviews.find(key=get_categories, reverse=True)
+    if categories == "category_name":
+        reviews.find(key=get_categories, reverse=True)
 
     if sort_by == "grade_highest":
         reviews.sort(key=get_grade, reverse=True)
