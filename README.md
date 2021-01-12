@@ -117,6 +117,9 @@ the current focus with this project and therefore not Implemented.
 
 ## Credits
 
+- Review description summary for the book Frankenstein:
+[www.wikipedia.org/frankenstein](https://en.wikipedia.org/wiki/Frankenstein)
+
 - Review description summary for the book Dr. Jekyll and Mr. Hyde:
 [www.bbc.co.uk](https://www.bbc.co.uk/bitesize/guides/z88wjxs/revision/1)
 

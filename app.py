@@ -170,21 +170,22 @@ def add_review():
 def single_review(review_id):
     review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     return render_template("full_review.html", review=review)
-# 
+#
 
 
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
     if request.method == "POST":
-        explicit_content = "on" if request.form.get("explicit_content") else "off"
+        explicit_content = "on" if request.form.get(
+            "explicit_content") else "off"
         submit = {
             "book_name": request.form.get("book_name"),
             "author_name": request.form.get("author_name"),
             "category_name": request.form.get("category_name"),
             "language": request.form.get("language"),
-            "page_length": request.form.get("page_length"),
+            "page_length": int(request.form.get("page_length")),
             "published_date": request.form.get("published_date"),
-
+            "grade": int(request.form.get("grade")),
             "review_description": request.form.get("review_description"),
             "explicit_content": explicit_content,
             "created_by": session["user"]
@@ -194,7 +195,8 @@ def edit_review(review_id):
 
     review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_review.html", review=review, categories=categories)
+    return render_template(
+        "edit_review.html", review=review, categories=categories)
 
 
 @app.route("/delete_review/<review_id>")
@@ -232,7 +234,7 @@ def edit_category(category_id):
         mongo.db.categories.update({"_id": ObjectId(category_id)}, submit)
         flash("Category Successfully Updated")
         return redirect(url_for("get_categories"))
-        
+
     category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
     return render_template("edit_category.html", category=category)
 
