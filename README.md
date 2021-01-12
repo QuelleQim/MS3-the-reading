@@ -88,25 +88,43 @@ In this section the features of the different parts of this project
 - Feature 5 - review card-panel - the review card panel contains:
     - book image (currently the same image for all reviews)
     - review headings (book title, author name, genre category, language,
-        page length, date of publishing, grade, created by whom)
+        page length, date of publishing, grade, created by whom, and exlpicit content).
     - review description, that lets the users read a truncated version of the
         review description of the book.
     - teal button stating 'Full review' wich lets the user access the full review 
         where the description text is not truncated.
-- Feature 6 - search and filter bar
-    - search
-    - filter 
+- Feature 6 - search field and filter field.
+    - search field - text input field that lets the user input either a book title,
+        author name or category name.
+    - sort field - lets the user sort the reviews by four diffrent parameters. By:
+        grade: highest to lowest, grade : lowest to highest, page length: highest to
+        lowest, page length: lowest to highest.
     - search button - one blue button with label 'Search'. When pressed it activates
-        a function that makes a search to the database taking the text field and 
-        sort by filter as parameters and returns a corresponding value. 
+        a function that makes a search to the database taking the search text field
+        and sort field as parameters and returns a corresponding value in list form. 
     - reset button - returns the user to the home page (reviews.html).
 - Feature 7 - base.html - navbar - when logged in as a generic user the navbar
     contains four nav items (home, profile, new review and log out).
 - Feature 8 - base.html - navbar - when logged in as a admin the navbar contains 
     five navbar items (home, profile, new review, manage categories and log out).
-- Feature 9 -
-- Feature 10 -
-- Feature 11 -
+- Feature 9 - full_review.html - header with the title of the chosen book review and
+    card-panel of review without truncated review description. See full content in
+    feature 5 in this list.
+- Feature 10 - add_review.html - lets the user create a book review by filling in a
+    form with nine input fields. The fields are:
+    - book title - lets the user input the title of the book.
+    - author - lets the user input the author name of the book.
+    - book category - lets the user chose a genre category for book.
+    - language - lets the user input the language the book is written in.
+    - length in pages - lets the user input how many pages the book contains.
+    - published date - lets the user input the date that the book was published.
+    - grade - lets the user input the a grade to the book.
+    - review description - lets the user freely enter a description of the book 
+    - explicit content - lets the user input the if the book contains explicit content.
+        The input field contains a materialize switch which is either on or off. If
+        the switch is turned on a triangle warning icon is shown on the review card-panel. 
+
+- Feature 11 - edit_review.html - 
 - Feature 12 -
 - Feature 13 -
 - Feature 14 -
