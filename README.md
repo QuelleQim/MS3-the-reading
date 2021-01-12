@@ -58,9 +58,73 @@ As an owner type, I want:
 ![Image of Drop down menu for mobile, Admin](assets/wireframes/drop-down-menu-admin.png)
 
 ## Features
-
+In this section the features of the different parts of this project
+    will be described.
 
 ### Existing Features
+
+- Feature 1 - base.html - base template that extends to all other html files.
+    The base template contains three different sections. 
+    - Header - navbar - The navbar contains the company logo image, home button,
+        Log in button and register button.
+    - Main section, when there is no user logged in there is a welcome message
+        spanned across the top of the page, underneath the navbar. Underneath
+        the welcome text there is a place for flash message that is unique per
+        each html page.
+    - Footer - the footer contains four social link icons (facebook, instagram,
+        twitter and linkedin), the company logo image, links to information.html
+        (about us, terms, privacy and FAQ), copyright text and company email
+        (thereading@readerz.null).
+- Feature 2 - login.html - lets the user enter their username, password and press
+    a button that logs in the user into the webpage. Beneath the log in card-panel
+    there is a link called 'Register here!' that redirects the user to the
+    registration page. 
+- Feature 3 - register.html - lets the user enter a username, password and press
+    a button that registers and logs in the user into the webpage. Beneath the
+    log in card-panel there is a link called 'Log In here!' that redirects
+    the user to the log in page.
+- Feature 4 - reviews.html - 'Home' - this page lets the user see all the reviews
+    that the webpage contains. The reviews are displayed underneath each other.
+- Feature 5 - review card-panel - the review card panel contains:
+    - book image (currently the same image for all reviews)
+    - review headings (book title, author name, genre category, language,
+        page length, date of publishing, grade, created by whom)
+    - review description, that lets the users read a truncated version of the
+        review description of the book.
+    - teal button stating 'Full review' wich lets the user access the full review 
+        where the description text is not truncated.
+- Feature 6 - search and filter bar
+    - search
+    - filter 
+    - search button - one blue button with label 'Search'. When pressed it activates
+        a function that makes a search to the database taking the text field and 
+        sort by filter as parameters and returns a corresponding value. 
+    - reset button - returns the user to the home page (reviews.html).
+- Feature 7 - base.html - navbar - when logged in as a generic user the navbar
+    contains four nav items (home, profile, new review and log out).
+- Feature 8 - base.html - navbar - when logged in as a admin the navbar contains 
+    five navbar items (home, profile, new review, manage categories and log out).
+- Feature 9 -
+- Feature 10 -
+- Feature 11 -
+- Feature 12 -
+- Feature 13 -
+- Feature 14 -
+- Feature 15 -
+- Feature 16 -
+- Feature 17 -
+- Feature 18 -
+- Feature 19 -
+- Feature 20 -
+
+
+
+
+    Feature 1 - allows users X to achieve Y, by having them fill out Z
+    ...
+
+
+
 
 
 ### Features Left to Implement
