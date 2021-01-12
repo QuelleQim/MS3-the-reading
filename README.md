@@ -151,6 +151,20 @@ Code:
 
 #### Images
 
+- The logo for The Reading was created by me with the website
+    [hatchful](https://hatchful.shopify.com/).
+
+![alt](/static/images/the-reading-logo.png)
+
+
+- The review image with the text "BOOK IMAGES" was made by me with paint.
+
+![alt](/static/images/book-image.jpg)
+
+- The background image of books is created by Annie Spratt and has been retrived
+    from [unsplash.com](https://unsplash.com/photos/lIWF2uHxs0Q).
+
+![alt](/static/images/books.jpg)
 
 ### Acknowledgements
 
