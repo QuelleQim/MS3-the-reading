@@ -22,9 +22,9 @@
                         {{ review.book_language }}
                     </div>
                     <div class="col s6 m4 l4">
-                        {{ review.page_length }} pages
+                        Pages: {{ review.page_length }}
                         <br>
-                        {{ review.published_date }}
+                        Date: {{ review.published_date }}
                         <br>
                         {% if review.explicit_content == "on" %}
                         <i class="fas fa-exclamation-triangle tooltipped"

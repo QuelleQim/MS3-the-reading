@@ -10,7 +10,7 @@
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="input-field review-filter-input col s10 offset-s1 m8 offset-m2">
                 <i class="fas fa-search prefix search-icon"></i>
-                <input type="text" name="query" id="query" class="validate" required>
+                <input type="text" name="query" id="query" class="validate search-input" required>
                 <label for="query"> Search for title, author or category here . . .</label>
             </div>
             <div class="input-field col s10 offset-s1 m8 offset-m2">
@@ -45,7 +45,7 @@
                     <div class="col s12 m4 l3">
                         <img src="/static/images/book-image.jpg" alt="Book image">
                     </div>
-                    <div class="col s6 m4 l4">
+                    <div class="col s6 m4 l4 review-div">
                         <strong>{{ review.book_name }}</strong>
                         <br>
                         {{ review.author_name }}
@@ -54,10 +54,10 @@
                         <br>
                         {{ review.book_language }}
                     </div>
-                    <div class="col s6 m4 l4">
-                        {{ review.page_length }} pages
+                    <div class="col s6 m4 l4 review-div">
+                        Pages: {{ review.page_length }}
                         <br>
-                        {{ review.published_date }}
+                        Date: {{ review.published_date }}
                         <br>
                         {% if review.explicit_content == "on" %}
                         <i class="fas fa-exclamation-triangle tooltipped"

@@ -139,7 +139,17 @@ nav ul a {
 }
 
 .review-filter-input {
-    margin: 10px;
+    /* margin: 10px; */
+    margin-top: 20px;
+    padding-top: 20px !important;
+}
+
+.review-div {
+    margin-top: 10px;
+}
+
+.search-input {
+    margin-top: 20px;
 }
 
 .search-icon {
