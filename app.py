@@ -24,20 +24,19 @@ mongo = PyMongo(app)
 def get_reviews():
     reviews = list(mongo.db.reviews.find())
     categories = mongo.db.categories.find().sort("category_name", 1)
-    review = mongo.db.reviews.find()
-    return render_template("reviews.html", review=review, reviews=reviews, categories=categories)
+    return render_template("reviews.html", reviews=reviews, categories=categories)
 
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
+    grade = request.form.get("grade")
+    page_length = request.form.get("page_length")
     reviews = list(mongo.db.reviews.find({"$text": {"$search": query}}))
     categories = mongo.db.categories.find().sort("category_name", 1)
-    grades = mongo.db.categories.find().sort("grade")
-    page_lengths = mongo.db.categories.find().sort("page_length", 1)
+    
     return render_template(
-        "reviews.html", reviews=reviews, categories=categories,
-        grades=grades, page_lengths=page_lengths)
+        "reviews.html", reviews=reviews, categories=categories)
 
 
 @app.route("/register", methods=["GET", "POST"])
