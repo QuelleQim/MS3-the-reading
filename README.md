@@ -152,8 +152,11 @@ Code:
 #### Images
 
 
-#### Audio
-
-
 ### Acknowledgements
+
+This project received inspiration for this project from 3 following websites:
+
+- [Readsy](https://reedsy.com/discovery/blog/book-review-examples)
+- [Bookpage](https://bookpage.com/reviews?page=2)
+- [Goodreads](https://www.goodreads.com/)
 
