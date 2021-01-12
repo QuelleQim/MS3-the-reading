@@ -9,10 +9,10 @@
         <li>
             <div class="card-content">
                 <div class="col s12">
-                    <div class="col l3 m4">
+                    <div class="col s12 m4 l3">
                         <img src="/static/images/book-image.jpg" alt="Book image">
                     </div>
-                    <div class="col l4 m4">
+                    <div class="col s6 m4 l4">
                         <strong>{{ review.book_name }}</strong>
                         <br>
                         {{ review.author_name }}
@@ -21,7 +21,7 @@
                         <br>
                         {{ review.book_language }}
                     </div>
-                    <div class="col l4 m4">
+                    <div class="col s6 m4 l4">
                         {{ review.page_length }} pages
                         <br>
                         {{ review.published_date }}
@@ -31,6 +31,12 @@
                             data-position="bottom" data-tooltip="Explicit content!"></i>
                         <br>
                         {% endif %}
+                        Grade: 
+                        <!-- Range for jinja was adapted from jinja.palletsprojects.com -->
+                        {% for number in range(review.grade) %}
+                            <i class="far fa-bookmark"></i>
+                        {% endfor %}
+                        <br>
                         <em>By: {{ review.created_by }}</em>
                     </div>
                 </div>
