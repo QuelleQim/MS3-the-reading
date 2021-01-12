@@ -30,11 +30,28 @@ def get_reviews():
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
-    grade = request.form.get("grade")
-    page_length = request.form.get("page_length")
+    sort_by = request.form.get("sort_by")
     reviews = list(mongo.db.reviews.find({"$text": {"$search": query}}))
     categories = mongo.db.categories.find().sort("category_name", 1)
-    
+
+    def get_grade(review):
+        return review.get('grade')
+
+    def get_page_length(review):
+        return review.get('page_length')
+
+    # if categories == "category_name":
+    #     reviews.find(key=get_categories, reverse=True)
+
+    if sort_by == "grade_highest":
+        reviews.sort(key=get_grade, reverse=True)
+    if sort_by == "grade_lowest":
+        reviews.sort(key=get_grade)
+    if sort_by == "page_highest":
+        reviews.sort(key=get_page_length, reverse=True)
+    if sort_by == "page_lowest":
+        reviews.sort(key=get_page_length)
+
     return render_template(
         "reviews.html", reviews=reviews, categories=categories)
 
@@ -133,9 +150,9 @@ def add_review():
             "author_name": request.form.get("author_name"),
             "category_name": request.form.get("category_name"),
             "language": request.form.get("language"),
-            "page_length": request.form.get("page_length"),
+            "page_length": int(request.form.get("page_length")),
             "published_date": request.form.get("published_date"),
-            "grade": request.form.get("grade"),
+            "grade": int(request.form.get("grade")),
             "review_description": request.form.get("review_description"),
             "explicit_content": explicit_content,
             "created_by": session["user"]
