@@ -117,6 +117,9 @@ the current focus with this project and therefore not Implemented.
 
 ## Credits
 
+
+### Content
+
 Book reviews:
 
 - Review description summary for the book Frankenstein:
@@ -143,13 +146,7 @@ Code:
 [jinja.palletsprojects.com](https://jinja.palletsprojects.com/en/2.11.x/templates/)
 
 
-### Content
-
-
 ### Media
-
-
-#### Images
 
 - The logo for The Reading was created by me with the website
     [hatchful](https://hatchful.shopify.com/).
@@ -165,6 +162,7 @@ Code:
     from [unsplash.com](https://unsplash.com/photos/lIWF2uHxs0Q).
 
 ![alt](/static/images/books.jpg)
+
 
 ### Acknowledgements
 
