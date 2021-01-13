@@ -57,6 +57,10 @@ As an owner type, I want:
 
 ![Image of Drop down menu for mobile, Admin](assets/wireframes/drop-down-menu-admin.png)
 
+As the project has progressed so has also the layout and structurall choises. Which means
+that the wireframes that were made in the beginning of the project are not identical to
+the projects current layout and structure. Some had to be changed due to coding difficulties
+and some due bad functionality in a real webbrowser.
 
 ## Features
 In this section the features of the different parts of this project
