@@ -333,6 +333,8 @@ The manual testing is executed with the following method: Page > action taken >
 18. information.html.
 
 
+### Automated Testing
+
 
 ### W3C vaildator
 
@@ -343,13 +345,22 @@ The manual testing is executed with the following method: Page > action taken >
 ### jshint
 
 
-### Automated Testing
-
-
 ### Bugs fixed
-
+- Color correct - when the company logo was swatched for it's HEX color inside paint 3D
+    and later applied to the webpage navbar there was a noticable difference between the company
+    logo and navbar. To fix the problem I had to printcreen the navbar with company logo and
+    swatch the company logo again which resulted another HEX value, which I used again for the
+    navbar color and it became the same shade as the navbar. 
+- 
 
 ### Known issues
+- Picker required field - when filling out the form inside add_review.html and edit_review.html
+    the line underneath the picker field starts as green, but when the user clicks anywhere
+    else on the screen it automatically turns red, indicating that the wrong value has been
+    put in. But when the form is submitted it still accepts the picker choises. Because of
+    illness which resulted an inability to code for about a month the time left is unfortunaly
+    not enough to fix this problem. But I hope to get back to this issue and complete it after
+    graduation.
 
 
 ## Deployment
