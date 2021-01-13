@@ -210,7 +210,6 @@ def delete_review(review_id):
         return redirect(url_for("get_reviews"))
 
     review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
-
     if session["user"].lower() == review["created_by"].lower() or session["user"].lower() == "admin":
         mongo.db.reviews.remove({"_id": ObjectId(review_id)})
         flash("Review Successfully Deleted")

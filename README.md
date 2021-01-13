@@ -337,13 +337,10 @@ The manual testing is executed with the following method: Page > action taken >
 18. information.html.
 
 
-### Automated Testing
-
-
-### W3C vaildator
-
-
-### w3 validator
+### W3C validator
+The project passes through the w3c validator with one issue and 493 warnings.
+The issue and warnings does only regard the materialize foundational code and not the code
+written for this project using materialize.
 
 
 ### jshint
