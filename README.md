@@ -242,7 +242,8 @@ The manual testing is executed with the following method: Page > action taken >
 6. reviews.html > write 'mary' in search field and press 'reset' button > should return
     reviews.html and remove text input 'mary' > pass
 7. login.html > write registered username and password in text input and press 'Log in' button >
-    should log in user and remove welcome text header > pass
+    should log in user, return reviews.html, remove welcome text header and flash 'Welcome ...'
+    and the username > pass
 8. reviews.html > press 'edit review' button > should return edit_review.html with specific
     review values pre-filled > pass
 9. full_review.html > change text in input fields and press 'add changes' button > should return
@@ -272,12 +273,9 @@ The manual testing is executed with the following method: Page > action taken >
     with welcome header and flash 'You have been logged out > pass
 24. reviews.html > press link 'information', 'about us', 'terms', 'privacy' or 'FAQ' > should 
     return information.html > pass
+25. reviews.html > press company mail in bottom right of footer > should open upp the device
+    mail program with company mail typed in > pass
 
-
-
-
-
- 
 ### Webpage images
 
 
