@@ -114,11 +114,13 @@ In this section the features of the different parts of this project
     form with nine input fields. The fields are:
     - book title - lets the user input the title of the book.
     - author - lets the user input the author name of the book.
-    - book category - lets the user chose a genre category for book.
+    - book category - lets the user chose a genre category for book with a
+        materialize select input field.
     - language - lets the user input the language the book is written in.
     - length in pages - lets the user input how many pages the book contains.
     - published date - lets the user input the date that the book was published.
-    - grade - lets the user input the a grade to the book.
+    - grade - lets the user input the a grade to the book with a materialize select
+        input field. 
     - review description - lets the user freely enter a description of the book 
     - explicit content - lets the user input the if the book contains explicit content.
         The input field contains a materialize switch which is either on or off. If
@@ -139,26 +141,35 @@ In this section the features of the different parts of this project
     - user information - lets the user view information unique to the current user. 
         Firstly a counter that count how many reviews the user has created. And lastly
         a date time field showing when the user became a registered member. 
-    - reviews - lets the user view all the reviews made by the individuall user.
+    - reviews - lets the user view all the reviews made by the individual user i a list
+        underneath the user information card-panel.
     - delete_account - a red buton with the text 'delete account' lets the user delete 
         their own account at any time. When pressed the account gets deleted in the
         database and the user gets logged out and redirected to login.html.
     - review card-panels - same as feature 5.
-- Feature 14 - 
-- Feature 15 -
-- Feature 16 -
-- Feature 17 -
-- Feature 18 -
-- Feature 19 -
-- Feature 20 -
-
-
-
-
-    Feature 1 - allows users X to achieve Y, by having them fill out Z
-    ...
-
-
+- Feature 14 - categories.html - this feature is only avaliable to admin. It contains:
+    - a 'add category' button.
+    - lets admin view the current categories for books and press a button which lets
+        admin reach the edit function.
+- Feature 15 - add_category.html - which lets the admin add more categories to the database
+        which in turn will show on the webpage and be usable for all users when making
+        new reviews. Admin needs to add text to the input field and then press the
+        'add category' button which posts the category to the database. There is also a
+        cancel button which returns admin back to category.html.
+- Feature 16 - edit_category lets admin edit the category with one text input field and
+    three diffrent buttons.
+    - edit category - same content as feature 15 except for the input field which contains
+        the category name.
+    - delete_category - lets admin delete category from database and in turn from the
+        webpage.
+    - cancel button - lets the admin return back to category.html.
+- Feature 17 - logout - lets the user log out when wanted. When the 'log out' button in the
+    navbar is pressed the user gets logged out and returned to login.html
+- Feature 18 - information.html - lets the user read information that is relevant to the user.
+    - about us -  lets the user read the 'about us' section also containing the company email.
+    - current terms -  lets the user read the current terms of the website.
+    - privacy - lets the user read the website privacy policy.
+    - FAQ - lets the user read frequently asked questions.
 
 
 
