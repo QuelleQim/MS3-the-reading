@@ -57,6 +57,7 @@ As an owner type, I want:
 
 ![Image of Drop down menu for mobile, Admin](assets/wireframes/drop-down-menu-admin.png)
 
+
 ## Features
 In this section the features of the different parts of this project
     will be described.
@@ -172,11 +173,26 @@ In this section the features of the different parts of this project
     - FAQ - lets the user read frequently asked questions.
 
 
-
 ### Features Left to Implement
 
-- Future implementetion that would increase monetization would be to add adds to the webpage. That is not
-the current focus with this project and therefore not Implemented.
+- Future implementetion that would increase monetization would be to add adds to the webpage.
+    That is not the current focus with this project and therefore not implemented.
+- pagination - when the webpage increase in both users and reviews there would be a need for
+    pagination in reviews.html and profile.html for ease of navigation.
+- unique book image - in the future there will be a need to individualize the reviews to stand
+    out in the webpage, therefor a possibility for the user to add an image of their choice
+    to their review would be of intrest. The copyright and plagarism aspects would be needed
+    to be considered before implementation. 
+- profile image - to increase users usage of the webpage there would be need of customization
+    on the profile, to make users more interested to return to the webpage. A changeable
+    profile image would make the profile more personal and intriguing.
+- changeable themes - to make the webpage more personal and to make user return to the webpage
+    there should be, to the user, changeable themes so that the users can customize their own
+    experience on the webpage. Themes icluding fonts, background image, navbar, form color,
+    footer color etc.
+- invitation feature - to increase user count there should be some sort of invitational
+    feature. Either in form of a mailing form or connection to diffrent social media platforms.
+    Making it easier for current registered users to invite and promote the webpage.
 
 
 ## Technologies Used
