@@ -205,8 +205,18 @@ def edit_review(review_id):
 
 @app.route("/delete_review/<review_id>")
 def delete_review(review_id):
-    mongo.db.reviews.remove({"_id": ObjectId(review_id)})
-    flash("Review Successfully Deleted")
+    if "user" not in session:
+        flash("Login to delete reviews")
+        return redirect(url_for("get_reviews"))
+
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+
+    if session["user"].lower() == review["created_by"].lower() or session["user"].lower() == "admin":
+        mongo.db.reviews.remove({"_id": ObjectId(review_id)})
+        flash("Review Successfully Deleted")
+        return redirect(url_for("get_reviews"))
+
+    flash("Cannot delete other users reviews")
     return redirect(url_for("get_reviews"))
 
 
