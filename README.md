@@ -278,6 +278,61 @@ The manual testing is executed with the following method: Page > action taken >
 
 ### Webpage images
 
+![alt](/static/images/1reviews.png)
+1. reviews.html when no user is logged in.
+
+![alt](/static/images/2search-bar.png)
+2. reviews.html, search bar.
+
+![alt](/static/images/3review-card-panel.png)
+3. reviews.html card.panel.
+
+![alt](/static/images/4footer.png)
+4. reviews.html footer.
+
+![alt](/static/images/5log-in.png)
+5. login.html.
+
+![alt](/static/images/6register.png)
+6. register.html.
+
+![alt](/static/images/7profile.png)
+7. profile.html, when admin is logged in.
+
+![alt](/static/images/8review-admin-login.png)
+8. reviews.html when admin is logged in.
+
+![alt](/static/images/9review-user-login.png)
+9. reviews.html when user is logged in.
+
+![alt](/static/images/10new-review.png)
+10. add_review.html
+
+![alt](/static/images/11edit-review.png)
+11. edit_review.html.
+
+![alt](/static/images/12full-review.png)
+12. full_review.html.
+
+![alt](/static/images/13delete-review.png)
+13. full_review.html > delete_review.
+
+![alt](/static/images/14categories.png)
+14. categories.html
+
+![alt](/static/images/15add-category.png)
+15. add_category.html.
+
+![alt](/static/images/16edit-category.png)
+16. edit_category.html.
+
+![alt](/static/images/17delete-category.png)
+17. edit_category.html > delete_category.
+
+![alt](/static/images/18information.png)
+18. information.html.
+
+
 
 ### W3C vaildator
 
