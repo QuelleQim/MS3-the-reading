@@ -135,8 +135,16 @@ In this section the features of the different parts of this project
     and the last is red and states 'delete review'. When the red button is pressed a
     modal pops up and asks for confirmation, when the button 'yes, delete' is pushed
     the current review is deleted from the webpage and database as a whole.
-- Feature 13 -
-- Feature 14 -
+- Feature 13 - profile.html - lets the user view their profile containing:
+    - user information - lets the user view information unique to the current user. 
+        Firstly a counter that count how many reviews the user has created. And lastly
+        a date time field showing when the user became a registered member. 
+    - reviews - lets the user view all the reviews made by the individuall user.
+    - delete_account - a red buton with the text 'delete account' lets the user delete 
+        their own account at any time. When pressed the account gets deleted in the
+        database and the user gets logged out and redirected to login.html.
+    - review card-panels - same as feature 5.
+- Feature 14 - 
 - Feature 15 -
 - Feature 16 -
 - Feature 17 -
