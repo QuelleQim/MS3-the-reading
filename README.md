@@ -126,7 +126,6 @@ In this section the features of the different parts of this project
     - explicit content - lets the user input the if the book contains explicit content.
         The input field contains a materialize switch which is either on or off. If
         the switch is turned on a triangle warning icon is shown on the review card-panel. 
-
 - Feature 11 - edit_review.html - same form as in feature 10, but with the input fields
     prefilled with the same values as when made in add_review.html. This feature lets 
     the user change the originaly made review and update it to the database. There are
@@ -227,10 +226,40 @@ In this section the features of the different parts of this project
 
 ## Testing
 
-
 ### Manual Testing
+The manual testing is executed with the following method: Page > action taken >
+    expected result > pass/fail
+1. reviews.html > pressed 'Log In' button in navbar > should return login.html > pass
+2. reviews.html > pressed 'Register' button in navbar > should return register.html > pass
+3. reviews.html > write in 'mary' in search field and pressed 'Search' button in seach
+    card-panel > should return a review with the text 'mary' in the title, author name or
+    category name > pass
+4. reviews.html > pressed 'Full review' button in review card-panel > should return
+    full_review.html > pass
+5. reviews.html > write 'mary' in search field and press 'reset' button > should return
+    reviews.html and remove text input 'mary' > pass
+6. login.html > write registered username and password in text input and press 'Log in' button >
+    should log in user and remove welcome text header > pass
+7. reviews.html > press 'edit review' button > should return edit_review.html with specific
+    review values pre-filled > pass
+8. full_review.html > change text in input fields and press 'add changes' button > should return
+    edit_review.html with changes and flash ' Review Successfully Updated!' > pass
+9. full_review.html > press 'cancel' button > should return reviews.html > pass
+10. reviews.html > press 'profile' button in navbar > should return profile.html > pass 
+11. profile.html > press 'delete account' and confirm modal > should delete user from database,
+    log out user, return login.html and flash 'Account Successfully Deleted' > pass
+12. reviews.html > press button 'new review' in navbar > should return add_review.html > pass 
+13. add_review.html > fill out input form and press 'add review' > review should be put into the
+    database, return reviews.html and flash 'Review Successfully Added!' > pass
+14. full_review.html > press button 'delete review', confirm modal option > should delete review
+    from database and webpage, return to reivews.html and flash 'Review Successfully Deleted' > pass 
+15. 
 
 
+
+
+
+ 
 ### Webpage images
 
 
@@ -257,7 +286,6 @@ In this section the features of the different parts of this project
 
 
 ## Credits
-
 
 ### Content
 
