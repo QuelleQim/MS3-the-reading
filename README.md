@@ -236,24 +236,42 @@ The manual testing is executed with the following method: Page > action taken >
     category name > pass
 4. reviews.html > pressed 'Full review' button in review card-panel > should return
     full_review.html > pass
-5. reviews.html > write 'mary' in search field and press 'reset' button > should return
+5. reviews.html > write 'horror' search field, choose option 'Page Length: Highest to 
+    Lowest' and press 'search' button > should return all reviews in the category horror
+    sorted by the longest page legnth to lowest > pass
+6. reviews.html > write 'mary' in search field and press 'reset' button > should return
     reviews.html and remove text input 'mary' > pass
-6. login.html > write registered username and password in text input and press 'Log in' button >
+7. login.html > write registered username and password in text input and press 'Log in' button >
     should log in user and remove welcome text header > pass
-7. reviews.html > press 'edit review' button > should return edit_review.html with specific
+8. reviews.html > press 'edit review' button > should return edit_review.html with specific
     review values pre-filled > pass
-8. full_review.html > change text in input fields and press 'add changes' button > should return
+9. full_review.html > change text in input fields and press 'add changes' button > should return
     edit_review.html with changes and flash ' Review Successfully Updated!' > pass
-9. full_review.html > press 'cancel' button > should return reviews.html > pass
-10. reviews.html > press 'profile' button in navbar > should return profile.html > pass 
-11. profile.html > press 'delete account' and confirm modal > should delete user from database,
+10. full_review.html > press 'cancel' button > should return reviews.html > pass
+11. reviews.html > press 'profile' button in navbar > should return profile.html > pass 
+12. profile.html > press 'delete account' and confirm modal > should delete user from database,
     log out user, return login.html and flash 'Account Successfully Deleted' > pass
-12. reviews.html > press button 'new review' in navbar > should return add_review.html > pass 
-13. add_review.html > fill out input form and press 'add review' > review should be put into the
+13. reviews.html > press button 'new review' in navbar > should return add_review.html > pass 
+14. add_review.html > fill out input form and press 'add review' > review should be put into the
     database, return reviews.html and flash 'Review Successfully Added!' > pass
-14. full_review.html > press button 'delete review', confirm modal option > should delete review
+15. add_review.html > press button 'cancel' > return reviews.html > pass
+16. full_review.html > press button 'delete review', confirm modal option > should delete review
     from database and webpage, return to reivews.html and flash 'Review Successfully Deleted' > pass 
-15. 
+17. categories.html > press button 'add category' > should return add_category.html > pass
+18. add_category.html > add text to input field and press button 'add category' > should
+    add category name to database, return categories.html and flash 'New Category Added' > pass
+19. categories.html > press button 'edit' > should return edit_category.html > pass 
+20. edit_category.html > change text in input field then press 'edit category' > should update
+    the category name in the database, return categories.html and flash 'Category Successfully 
+    updated' > pass
+21. edit_category.html > press 'delete' button then press 'yes, delete' in modal > should delete
+    category name from database, return categories.html and flash 'Category Successfully
+    Deleted' > pass  
+22. edit_category.html > press 'cancel' > should return categories.html > pass  
+23. reviews.html > press button 'Log out' in navbar > should log out user, return reviews.html
+    with welcome header and flash 'You have been logged out > pass
+24. reviews.html > press link 'information', 'about us', 'terms', 'privacy' or 'FAQ' > should 
+    return information.html > pass
 
 
 
