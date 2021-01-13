@@ -197,18 +197,33 @@ In this section the features of the different parts of this project
 
 ## Technologies Used
 
-
 ### Languages
-
+- HTML - The project uses HTML to create visable content.
+- CSS - The project uses CSS to style the HTML code.
+- Python - The project uses python to create functions conected to the HTML code, making the webpage
+    interactive and responsive. 
+- Pip3 - The project uses pip3 to install flask.
+- Flask - The project uses flask to retrive assets which helps containing sescrets keys and connect 
+    to other platforms.
 
 ### Framework
-
+- Materialize - The project uses materialize to simplify the customization of the HTML code.
 
 ### Library
-
+- Font awesome - The project uses font awesome to customize the webpage with custom icons. 
 
 ### Other Technologies
+- Hatchful - The logo for The Reading was created by me with the website
+    [hatchful](https://hatchful.shopify.com/).
 
+![alt](/static/images/the-reading-logo.png)
+
+
+- Paint - The review image with the text "BOOK IMAGES" was made by me with paint.
+
+![alt](/static/images/book-image.jpg)
+
+- Marvel - the wireframes made for this project was made with [marvel](https://marvelapp.com/).
 
 ## Testing
 
@@ -273,16 +288,6 @@ Code:
 
 
 ### Media
-
-- The logo for The Reading was created by me with the website
-    [hatchful](https://hatchful.shopify.com/).
-
-![alt](/static/images/the-reading-logo.png)
-
-
-- The review image with the text "BOOK IMAGES" was made by me with paint.
-
-![alt](/static/images/book-image.jpg)
 
 - The background image of books is created by Annie Spratt and has been retrived
     from [unsplash.com](https://unsplash.com/photos/lIWF2uHxs0Q).
