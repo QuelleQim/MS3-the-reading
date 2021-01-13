@@ -124,8 +124,17 @@ In this section the features of the different parts of this project
         The input field contains a materialize switch which is either on or off. If
         the switch is turned on a triangle warning icon is shown on the review card-panel. 
 
-- Feature 11 - edit_review.html - 
-- Feature 12 -
+- Feature 11 - edit_review.html - same form as in feature 10, but with the input fields
+    prefilled with the same values as when made in add_review.html. This feature lets 
+    the user change the originaly made review and update it to the database. There are
+    two buttons in the bottom of the form. One button is green and lets the user post the
+    changes to the database. The other button is orange and returns the user to
+    reviews.html.
+- Feature 12 - delete_review - in feature 9 (full-review.html) there are two buttons if 
+    user is creator of the review. The first button is blue and states 'edit review'
+    and the last is red and states 'delete review'. When the red button is pressed a
+    modal pops up and asks for confirmation, when the button 'yes, delete' is pushed
+    the current review is deleted from the webpage and database as a whole.
 - Feature 13 -
 - Feature 14 -
 - Feature 15 -
