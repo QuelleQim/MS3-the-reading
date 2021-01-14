@@ -380,6 +380,10 @@ Validator done 14-01-2021 11:14.
 
 The project has been deployed from [github](https://github.com) to [heroku](https://heroku.com).
 
+How the project was and is deployed: 
+Accessed heroku webpage, navigate to settings. In 'Config Vars' all relevant variables connectable
+to mongo had been entered.  See table: 
+
 Enviroment variables | Example description
 ------------ | -------------
 IP | this is the IP the service will bind to
@@ -389,6 +393,16 @@ PORT | the port that the application listens on
 SECRET_KEY | secret key to access mongo 
 
 
+After input of enviroment variables, navigate to 'deploy'. In 'deployment method' github was selected. 
+A couple of minutes of heroku builing the app later states: 'Build succeeded' and ' Deployed', meaning
+the project was uploaded to heroku and responsive. 'App connected to GitHub' states that the project
+is connected to the correct github user and states that it is deployed from master branch.
+'Automatic deploys' are enabled.
+
+Since the version on heroku is rooted from the github repository's master branch there is no
+difference between the deployed version on heroku and the github repository, except for a minor
+delay of a few minutes. To run the project localy one needs to clone the github repository and open
+it in a web browser.
 
 
 ## Credits
