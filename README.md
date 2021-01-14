@@ -407,8 +407,8 @@ is connected to the correct github user and states that it is deployed from mast
 
 Since the version on heroku is rooted from the github repository's master branch there is no
 difference between the deployed version on heroku and the github repository, except for a minor
-delay of a few minutes. To run the project localy one needs to clone the github repository and open
-it in a web browser.
+delay of a few minutes. To run the project localy one needs to clone the github repository, have
+a collection in mongoDB and run app.py.
 
 
 ## Credits
