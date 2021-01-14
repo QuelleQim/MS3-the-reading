@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-
     <h3 class="header grey-text text-lighten-2 center-align">Edit Review</h3>
-
-
     <div class="row card-panel grey lighten-2">
         <form class="col s12" method="POST" action="{{ url_for('edit_review', review_id=review._id) }}">
             <!-- book title input field -->
@@ -127,7 +124,4 @@
             </div>
         </form>
     </div>
-
-
 {% endblock %}
-

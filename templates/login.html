@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-
     <h3 class="header grey-text text-lighten-2 center-align text-shadow">Log In</h3>
-
     <div class="row">
         <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
             <div class="card-panel grey lighten-2">
@@ -33,7 +31,6 @@
             </div>
         </form>
     </div>
-
     <div class="row">
         <div class="center-align col s10 offset-s1  m8 offset-m2 l4 offset-l4">
             <p class="login-reg-bottom-text center-align white-text">
@@ -42,6 +39,4 @@
             </p>
         </div>
     </div>
-
-
 {% endblock %}

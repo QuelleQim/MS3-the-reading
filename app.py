@@ -173,12 +173,10 @@ def add_review():
     return render_template("add_review.html", categories=categories)
 
 
-# Check this section!
 @app.route("/single_review/<review_id>")
 def single_review(review_id):
     review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     return render_template("full_review.html", review=review)
-#
 
 
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
@@ -241,7 +239,6 @@ def add_category():
         mongo.db.categories.insert_one(category)
         flash("New Category Added")
         return redirect(url_for("get_categories"))
-
     return render_template("add_category.html")
 
 
