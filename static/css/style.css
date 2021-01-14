@@ -19,7 +19,6 @@ body {
 
 .btn {
     margin: 10px 10px 0 10px;
-    /* width: 136px; */
     width: auto;
     min-width: 100px;
 
@@ -43,7 +42,6 @@ strong {
 .brand-logo {
     height: 120px;
     width: 120px;
-    /* margin: 0 10px 0 10px; */
 }
 
 .navbar {
@@ -134,7 +132,6 @@ nav ul a {
 
 .collapsible-header {
     background-color: #3c4048;
-    /* text-align: center !important; */
 }
 
 .btn-large {
@@ -149,7 +146,6 @@ nav ul a {
 }
 
 .review-filter-input {
-    /* margin: 10px; */
     margin-top: 20px;
     padding-top: 20px !important;
 }
@@ -169,7 +165,6 @@ nav ul a {
 .search-filter-row {
     padding-top: 10px;
 }
-
 
 
 /* log in and register */
