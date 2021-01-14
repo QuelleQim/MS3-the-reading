@@ -53,7 +53,11 @@ strong {
 }
 
 .sidenav-trigger {
-    margin-top: 30px !important;
+    margin-top: 23px !important;
+}
+
+.fa-bars {
+    padding: 10px !important;
 }
 
 .text-shadow {
