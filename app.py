@@ -92,11 +92,11 @@ def login():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {} :)".format(
+                    existing_user["password"], request.form.get("password")):
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {} :)".format(
                         request.form.get("username")))
-                    return redirect(url_for(
+                return redirect(url_for(
                         "profile", username=session["user"]))
             else:
                 # invalid password match
@@ -119,7 +119,11 @@ def profile(username):
     reviews = list(mongo.db.reviews.find({"created_by": user["username"]}))
 
     if session["user"]:
-        return render_template("profile.html", user=user, username=username, reviews=reviews)
+        return render_template(
+                                "profile.html",
+                                user=user,
+                                username=username,
+                                reviews=reviews)
 
     return redirect(url_for("login"))
 
@@ -144,7 +148,8 @@ def logout():
 @app.route("/add_review", methods=["GET", "POST"])
 def add_review():
     if request.method == "POST":
-        explicit_content = "on" if request.form.get("explicit_content") else "off"
+        explicit_content = "on" if request.form.get(
+            "explicit_content") else "off"
         review = {
             "book_name": request.form.get("book_name"),
             "author_name": request.form.get("author_name"),
@@ -210,7 +215,8 @@ def delete_review(review_id):
         return redirect(url_for("get_reviews"))
 
     review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
-    if session["user"].lower() == review["created_by"].lower() or session["user"].lower() == "admin":
+    if session["user"].lower() == review["created_by"].lower() or \
+            session["user"].lower() == "admin":
         mongo.db.reviews.remove({"_id": ObjectId(review_id)})
         flash("Review Successfully Deleted")
         return redirect(url_for("get_reviews"))
@@ -262,7 +268,6 @@ def delete_category(category_id):
 @app.route("/information")
 def information():
     return render_template("information.html")
-
 
 
 if __name__ == "__main__":
