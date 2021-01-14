@@ -216,7 +216,7 @@ In this section the features of the different parts of this project
 - Font awesome - The project uses font awesome to customize the webpage with custom icons. 
 
 ### Other Technologies
-- Hatchful - The logo for The Reading was created by me with the website
+- Hatchful - The logo and favicon for The Reading was created by me with the website
     [hatchful](https://hatchful.shopify.com/).
 
 ![alt](/static/images/the-reading-logo.png)
