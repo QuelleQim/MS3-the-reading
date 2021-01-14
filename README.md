@@ -224,7 +224,6 @@ In this section the features of the different parts of this project
     to other platforms.
 - Hatchful - The logo and favicon for The Reading was created by me with the website
     [hatchful](https://hatchful.shopify.com/).
-
 ![alt](/static/images/the-reading-logo.png)
 
 
