@@ -426,7 +426,7 @@ Book reviews:
 [www.wikipedia.org/dracula](https://en.wikipedia.org/wiki/Dracula)
 
 - Review description summary for the book Alice in Wonderland:
-[en.wikipedia.org](https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland)
+[goodreads.com](https://www.goodreads.com/book/show/13023.Alice_in_Wonderland)
 
 Code:
 
