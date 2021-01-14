@@ -24,7 +24,8 @@ mongo = PyMongo(app)
 def get_reviews():
     reviews = list(mongo.db.reviews.find())
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("reviews.html", reviews=reviews, categories=categories)
+    return render_template(
+        "reviews.html", reviews=reviews, categories=categories)
 
 
 @app.route("/search", methods=["GET", "POST"])
@@ -41,7 +42,7 @@ def search():
         return review.get('page_length')
 
     if categories == "category_name":
-        reviews.find(key=get_categories, reverse=True)
+        categories.find(key=get_categories, reverse=True)
 
     if sort_by == "grade_highest":
         reviews.sort(key=get_grade, reverse=True)
