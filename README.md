@@ -215,6 +215,9 @@ In this section the features of the different parts of this project
 ### Library
 - Font awesome - The project uses font awesome to customize the webpage with custom icons. 
 
+###  Hosting Platform
+- Heroku - The project uses heroku as hosting platform.
+
 ### Other Technologies
 - Pip3 - The project uses pip3 to install flask.
 - Flask - The project uses flask to retrive assets which helps containing sescrets keys and connect 
