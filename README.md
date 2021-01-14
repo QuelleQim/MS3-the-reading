@@ -337,13 +337,25 @@ The manual testing is executed with the following method: Page > action taken >
 18. information.html.
 
 
-### W3C validator
-The project passes through the w3c validator with one issue and 493 warnings.
+### w3c validator
+The project passes through the w3c css validator with one issue and 493 warnings.
 The issue and warnings does only regard the materialize foundational code and not the code
 written for this project using materialize.
+- [Validator.w3.org](https://validator.w3.org/)
 
+
+### w3 validator
+The project passes through the w3 html validator with one warning. The warning stated that 
+a section was without headings "From line 70, column 5; to line 70, column 13". Upon further
+investigation, for this project there is no need for headings in that part of the project
+and will therefor not be added, due to customization preferences.
+
+- [validator.w3.org](https://validator.w3.org/)
 
 ### jshint
+The project passes through the w3 html validator without warnings.
+
+- [jshint.com](https://jshint.com/)
 
 
 ### Bugs fixed
