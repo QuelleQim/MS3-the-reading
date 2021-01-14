@@ -205,9 +205,9 @@ In this section the features of the different parts of this project
 - CSS - The project uses CSS to style the HTML code.
 - Python - The project uses python to create functions conected to the HTML code, making the webpage
     interactive and responsive. 
-- Pip3 - The project uses pip3 to install flask.
-- Flask - The project uses flask to retrive assets which helps containing sescrets keys and connect 
-    to other platforms.
+
+### Database
+- MongoDB - the project uses mongoDB for creating a cluster and upload it to a cloud storage.
 
 ### Framework
 - Materialize - The project uses materialize to simplify the customization of the HTML code.
@@ -216,6 +216,9 @@ In this section the features of the different parts of this project
 - Font awesome - The project uses font awesome to customize the webpage with custom icons. 
 
 ### Other Technologies
+- Pip3 - The project uses pip3 to install flask.
+- Flask - The project uses flask to retrive assets which helps containing sescrets keys and connect 
+    to other platforms.
 - Hatchful - The logo and favicon for The Reading was created by me with the website
     [hatchful](https://hatchful.shopify.com/).
 
