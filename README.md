@@ -340,7 +340,7 @@ The manual testing is executed with the following method: Page > action taken >
 ### w3c validator
 The project passes through the w3c css validator with one issue and 493 warnings.
 The issue and warnings does only regard the materialize foundational code and not the code
-written for this project using materialize.
+written for this project using materialize. Validator done 14-01-2021 11:00.
 - [Validator.w3.org](https://validator.w3.org/)
 
 
@@ -348,12 +348,13 @@ written for this project using materialize.
 The project passes through the w3 html validator with one warning. The warning stated that 
 a section was without headings "From line 70, column 5; to line 70, column 13". Upon further
 investigation, for this project there is no need for headings in that part of the project
-and will therefor not be added, due to customization preferences.
+and will therefor not be added, due to customization preferences. Validator done 14-01-2021 11:05.
 
 - [validator.w3.org](https://validator.w3.org/)
 
 ### jshint
 The project passes through the w3 html validator without warnings.
+Validator done 14-01-2021 11:14.
 
 - [jshint.com](https://jshint.com/)
 
@@ -367,16 +368,20 @@ The project passes through the w3 html validator without warnings.
 - 
 
 ### Known issues
-- Picker required field - when filling out the form inside add_review.html and edit_review.html
-    the line underneath the picker field starts as green, but when the user clicks anywhere
-    else on the screen it automatically turns red, indicating that the wrong value has been
-    put in. But when the form is submitted it still accepts the picker choises. Because of
-    illness which resulted an inability to code for about a month the time left is unfortunaly
-    not enough to fix this problem. But I hope to get back to this issue and complete it after
-    graduation.
+- Picker required field - when filling out the form inside edit_review.html the line underneath
+    the picker field starts as green, but when the user clicks anywhere else on the screen
+    it automatically turns red, indicating that the wrong value has been put in. But when the
+    form is submitted it still accepts the picker choises. Because of illness which resulted
+    an inability to code fulltime for about a month the time left is unfortunaly not enough to
+    fix this problem. But I hope to get back to this issue and complete it after graduation.
 
 
 ## Deployment
+
+The project has been deployed from [github](https://github.com) to [heroku](https://heroku.com).
+
+
+
 
 
 

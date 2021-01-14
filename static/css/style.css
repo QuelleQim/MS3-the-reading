@@ -1,4 +1,6 @@
 body {
+    /* The background image of books is created by Annie Spratt and has been retrived
+    from (https://unsplash.com/photos/lIWF2uHxs0Q). */ 
     background-image: url("/static/images/books.jpg");
     background-color: grey;
     background-repeat: repeat-y;
